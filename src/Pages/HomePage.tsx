@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { ReactDOM } from 'react';
+
+import { useState } from "react";
+import { useMatch } from "react-router-dom";
+import { Card } from "react-bootstrap";
 
 function HomePage() {
+
+  const match = useMatch('portfolio/:portfolioType');
+  var [ pType, setPType ] = useState(match?.params.portfolioType);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="HomePage">
+      <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>{pType}</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
     </div>
   );
 }

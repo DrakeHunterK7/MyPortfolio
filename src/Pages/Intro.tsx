@@ -5,20 +5,12 @@ import { Button } from 'react-bootstrap';
 import selfie from '../Assets/latest-front-photo.jpg';
 import gamedevImage from '../Assets/gamedev-collage2.png';
 import soenImage from '../Assets/soen-collage.png';
+import { Link } from 'react-router-dom';
 
 function Intro() {
 
-  const images = ["none", gamedevImage]
-  var [showImage, setShowImage] = React.useState(false)
-  var [bgImage, setBgImage] = useState(images[0])
   var [bgImageClass1, setBgImageClass1] = useState("imgFadeOut")
   var [bgImageClass2, setBgImageClass2] = useState("imgFadeOut")
-  // var [bgOpacity, setBgOpacity] = useState(0.0)
-
-
-  function changeOpacity(direction: Number){
-    
-  }
 
   return (
     <div className="Intro">
@@ -36,14 +28,20 @@ function Intro() {
 
           <div className="Intro-buttons">
 
+          <Link to={`/portfolio/software-engineer`}>
             <Button variant="primary" className="soen-button"
             onMouseEnter={() => setBgImageClass2("imgFadeIn")}
             onMouseLeave={() => setBgImageClass2("imgFadeOut")}
             >Software Engineer Portfolio</Button>
+          </Link>
 
-            <Button variant="primary" className="gamedev-button" 
-            onMouseEnter={() => setBgImageClass1("imgFadeIn")}
-            onMouseLeave={() => setBgImageClass1("imgFadeOut")}>Game Programmer Portfolio</Button>
+            <Link to={`/portfolio/game-programmer`}>
+              <Button variant="primary" className="gamedev-button" 
+                onMouseEnter={() => setBgImageClass1("imgFadeIn")}
+                onMouseLeave={() => setBgImageClass1("imgFadeOut")}>Game Programmer Portfolio
+              </Button>
+            </Link>
+            
           </div>
       </header>
     </div>

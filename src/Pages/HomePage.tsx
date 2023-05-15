@@ -1,24 +1,41 @@
 
+import './Styles/HomePage.scss';
 import { useState } from "react";
 import { useMatch } from "react-router-dom";
-import { Card } from "react-bootstrap";
+
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 function HomePage() {
 
   const match = useMatch('portfolio/:portfolioType');
   var [ pType, setPType ] = useState(match?.params.portfolioType);
 
+  function portfolioTitle() {
+    if(pType === 'game-programmer')
+      return 'Game Programmer'
+    else
+      return 'Software Engineer'
+  }
+
   return (
     <div className="HomePage">
-      <Card style={{ width: '18rem' }}>
-      <Card.Body>
-        <Card.Title>{pType}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+        <div className={pType+"-header"}>
+            <h1>Anas Peerzada</h1>
+            <h3>{portfolioTitle()} Portfolio</h3>
+        </div>
+        <Tabs
+              defaultActiveKey="about-me"
+              className={pType+"-tabs"}
+              justify
+            >
+              <Tab eventKey="about-me" title="About Me">
+              </Tab>
+              <Tab eventKey="projects" title="Projects and Experience">
+              </Tab>
+              <Tab eventKey="skills" title="Skills ">
+              </Tab>
+        </Tabs>
     </div>
   );
 }

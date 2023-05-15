@@ -1,0 +1,82 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixins.scss";
+
+:root {
+  --angle: 90deg;
+
+  background-color: aqua;
+}
+
+html, body {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-image: url("../../Assets/portfolioskybox.png");
+	animation: scroll-bg 60s linear infinite;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.HomePage {
+	margin: 0;
+	height: 100%;
+}
+
+.game-programmer-header {
+    background-color: $color-three;
+	padding: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
+	h1 {
+		animation: change-color ease;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		animation-fill-mode: both;
+	}
+	h3 {
+		color: $color-four;
+	}
+}
+
+.game-programmer-tabs {
+	background-color: $color-two;
+}
+
+.software-engineer-header {
+    background-color: $color-two;
+	padding: 1%;
+	padding-left: 5%;
+	padding-right: 5%;
+	h1 {
+		animation: change-color ease;
+		animation-iteration-count: infinite;
+		animation-duration: 5s;
+		animation-fill-mode: both;
+	}
+	h3 {
+		color: $color-four;
+	}
+}
+
+@keyframes change-color {
+	0% {
+	  color: $color-five;
+	}
+	
+	50% {
+	  color: $color-four;
+	}
+	
+	100% {
+	  color: $color-five;
+	}
+}
+
+@keyframes scroll-bg {
+	0% {
+		background-position: 0 0;
+	}
+
+	100% {
+		background-position: 4096px 0;
+	}
+}

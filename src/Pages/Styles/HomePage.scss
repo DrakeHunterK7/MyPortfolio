@@ -21,15 +21,27 @@ html, body {
 	height: 100%;
 }
 
+.model-container {
+	width: 10%;
+}
+
+.header-title {
+
+}
+
 .game-programmer-header {
-    background-color: $color-three;
+	background-color: $color-one;
 	padding: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
-	h1 {
+	padding-left: 2%;
+	padding-right: 2%;
+	display: flex;
+	flex-direction: row;
+	vertical-align: middle;
+
+	h1, h3 {
 		animation: change-color ease;
 		animation-iteration-count: infinite;
-		animation-duration: 5s;
+		animation-duration: 1s;
 		animation-fill-mode: both;
 	}
 	h3 {
@@ -37,20 +49,55 @@ html, body {
 	}
 }
 
+.game-programmer-body {
+	background-color: aqua;
+}
+
+.tab-content-container {
+	background-color: $color-five;
+	align-self: center;
+}
+
+.tab {
+	display: flex;
+	justify-content: center;
+}
+
 .game-programmer-tabs {
 	background-color: $color-two;
+
+	:hover{
+		background-color: $color-three !important;
+		color: $color-four;
+	}
+
+	.active{
+		background-color: $color-four !important;
+		color: $color-five !important;
+	}
+}
+
+.software-engineer-tabs {
+	background-color: $color-two;
+
+	:hover{
+		background-color: $color-three !important;
+		color: $color-four;
+	}
+
+	.active{
+		background-color: $color-four !important;
+		color: $color-five !important;
+	}
 }
 
 .software-engineer-header {
-    background-color: $color-two;
+    background-color: $color-one;
 	padding: 1%;
 	padding-left: 5%;
 	padding-right: 5%;
 	h1 {
-		animation: change-color ease;
-		animation-iteration-count: infinite;
-		animation-duration: 5s;
-		animation-fill-mode: both;
+		color: $color-five;
 	}
 	h3 {
 		color: $color-four;

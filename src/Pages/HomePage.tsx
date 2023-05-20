@@ -8,8 +8,12 @@ import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { Model } from "./../Assets/Apcube";
 
+import logoNameImage from '../Assets/logo-name.png';
+
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import AboutMe from './AboutMe';
+import { Navbar } from 'react-bootstrap';
 
 
 function HomePage() {
@@ -26,45 +30,36 @@ function HomePage() {
 
   return (
     <div className="HomePage">
-
         <div className={pType+"-header"}>
+
             <div className="model-container">
-            <Canvas camera={{ fov: 90, zoom: 4 }}>
-                  <ambientLight intensity={1.25}/>
-                  <Suspense fallback={null}>
-                    <Model />
-                  </Suspense>
-                  <OrbitControls enableZoom={false} enablePan={false}/>
-                  <Environment preset="sunset" />
-                </Canvas>
+              <Canvas camera={{ fov: 90, zoom: 4 }}>
+                <ambientLight intensity={1.25}/>
+                <Suspense fallback={null}>
+                  <Model />
+                </Suspense>
+                <OrbitControls enableZoom={false} enablePan={false}/>
+                <Environment preset="sunset" />
+              </Canvas>
             </div>
-            <div className="header-title">
-              <h1>Anas Peerzada</h1>
+            
+            <img src={logoNameImage} alt="name-logo" className="header-logo-name"/>
+
+            <div className="header-portfolio-type">
               <h3>{portfolioTitle()} Portfolio</h3>
             </div>
         </div>
 
         <div className={pType+"-body"}>
-          <Tabs
-            defaultActiveKey="about-me"
-            className={pType+"-tabs"}
-            justify
-          >
-            <Tab tabClassName={"tab"} eventKey="about-me" title="About Me">
-              <div className="tab-content-container">
-              </div>
-            </Tab>
-            <Tab tabClassName={pType+"-tab"} eventKey="projects" title="Projects and Experience">
-              <div className="tab-content-container">
+          <div className="main-menu-container">
+              <button>About Me</button>
+              <button>Projects and Experience</button>
+              <button>Skills</button>
+          </div>
+        </div>
 
-              </div>
-            </Tab>
-            <Tab tabClassName={pType+"-tab"} eventKey="skills" title="Skills ">
-              <div className="tab-content-container">
-
-              </div>
-            </Tab>
-          </Tabs>
+        <div className={pType+"-footer"}>
+          <p>This website was made entirely by me, using React, TypeScript and Sass! Hosted on Github :)</p>
         </div>
     </div>
   );

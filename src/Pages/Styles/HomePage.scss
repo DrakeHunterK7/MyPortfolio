@@ -3,8 +3,6 @@
 
 :root {
   --angle: 90deg;
-
-  background-color: aqua;
 }
 
 html, body {
@@ -12,21 +10,58 @@ html, body {
 	background-image: url("../../Assets/portfolioskybox.png");
 	animation: scroll-bg 60s linear infinite;
 	margin: 0;
-	padding: 0;
 	height: 100%;
 }
 
 .HomePage {
 	margin: 0;
-	height: 100%;
+	display: flex;
+  	flex-flow: column;
+  	height: 100vh;
+	align-items: center;
 }
 
 .model-container {
-	width: 10%;
+	width: 9%;
+}
+.header-logo-name {
+	margin-left: 1%;
+	width: 25%;
+	height: auto;
+	align-self: center;
+}
+.header-portfolio-type {
+	align-self: center;
+	text-align: right;
+	flex: 1;
 }
 
-.header-title {
+.main-menu-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+	align-items: center;
 
+	button {
+		margin: auto;
+		color: $color-five;
+		width: 25%;
+		border-radius: 10px;
+		background-color: $color-two;
+		border: 2px solid $color-one;
+		padding: 1%;
+	}
+
+	button:hover{
+		background-color: $color-three;
+		border: 2px solid $color-five;
+	}
+
+	button::click{
+		background-color: $color-four;
+		border: 2px solid $color-five;
+	}
 }
 
 .game-programmer-header {
@@ -35,8 +70,10 @@ html, body {
 	padding-left: 2%;
 	padding-right: 2%;
 	display: flex;
+	width: 100%;
 	flex-direction: row;
 	vertical-align: middle;
+	flex: 0 1 auto;
 
 	h1, h3 {
 		animation: change-color ease;
@@ -50,17 +87,28 @@ html, body {
 }
 
 .game-programmer-body {
-	background-color: aqua;
+	width: 80%;
+	flex: 1 0 auto;
+}
+
+.game-programmer-body-container {
+	height: 100%;
+}
+
+.game-programmer-footer{
+	width: 100%;
+	background-color: $color-one;
+	color: $color-four;
+	padding-left: 1%;
+	flex:  0 1 40px;
+	text-align: center;
 }
 
 .tab-content-container {
-	background-color: $color-five;
+	background-color: $color-one;
+	border: 2px solid $color-two;
 	align-self: center;
-}
-
-.tab {
-	display: flex;
-	justify-content: center;
+	height: 100%;
 }
 
 .game-programmer-tabs {
@@ -94,14 +142,48 @@ html, body {
 .software-engineer-header {
     background-color: $color-one;
 	padding: 1%;
-	padding-left: 5%;
-	padding-right: 5%;
-	h1 {
-		color: $color-five;
+	padding-left: 2%;
+	padding-right: 2%;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	vertical-align: middle;
+	flex: 0 1 auto;
+
+	h1, h3 {
+		animation: change-color ease;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+		animation-fill-mode: both;
 	}
 	h3 {
 		color: $color-four;
 	}
+}
+
+.software-engineer-body {
+	width: 80%;
+	flex: 1 0 auto;
+}
+
+.software-engineer-body-container {
+	height: 100%;
+}
+
+.software-engineer-footer{
+	width: 100%;
+	background-color: $color-one;
+	color: $color-four;
+	padding-left: 1%;
+	flex:  0 1 40px;
+	text-align: center;
+}
+
+.tab-content-container {
+	background-color: $color-one;
+	border: 2px solid $color-two;
+	align-self: center;
+	height: 100%;
 }
 
 @keyframes change-color {

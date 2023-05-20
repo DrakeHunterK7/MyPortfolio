@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import './Styles/Intro.scss';
 import { Button } from 'react-bootstrap';
@@ -28,20 +28,22 @@ function Intro() {
 
           <div className="Intro-buttons">
 
-          <Link to={`/portfolio/software-engineer`}>
-            <Button variant="primary" className="soen-button"
-            onMouseEnter={() => setBgImageClass2("imgFadeIn")}
-            onMouseLeave={() => setBgImageClass2("imgFadeOut")}
-            >Software Engineer Portfolio</Button>
-          </Link>
-
             <Link to={`/portfolio/game-programmer`}>
-              <Button variant="primary" className="gamedev-button" 
+              <button className="btn btn-primary gamedev-button" 
                 onMouseEnter={() => setBgImageClass1("imgFadeIn")}
                 onMouseLeave={() => setBgImageClass1("imgFadeOut")}>Game Programmer Portfolio
-              </Button>
+              </button>
             </Link>
-            
+
+            <Link to={`/portfolio/software-engineer`}>
+              <button  
+                className="btn btn-primary soen-button"
+                onMouseEnter={() => setBgImageClass2("imgFadeIn")}
+                onMouseLeave={() => setBgImageClass2("imgFadeOut")}
+              >
+                Software Engineer Portfolio
+              </button>
+            </Link>
           </div>
       </header>
     </div>

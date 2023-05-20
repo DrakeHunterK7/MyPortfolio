@@ -45,22 +45,34 @@ html, body {
 
 	button {
 		margin: auto;
-		color: $color-five;
+		color: $color-four;
 		width: 25%;
 		border-radius: 10px;
-		background-color: $color-two;
-		border: 2px solid $color-one;
+		font-size: larger;
+
+		background:
+        	linear-gradient($color-one, transparent),
+        	linear-gradient(to top left, $color-two, transparent),
+        	linear-gradient(to top right, $color-two, transparent);
+    	background-blend-mode: screen;
+		border: 0px solid $color-one;
 		padding: 1%;
 	}
 
 	button:hover{
-		background-color: $color-three;
-		border: 2px solid $color-five;
+		background:
+        	linear-gradient($color-two, transparent),
+        	linear-gradient(to top left, $color-three, transparent),
+        	linear-gradient(to top right, $color-two, transparent);
+    	background-blend-mode: screen;
 	}
 
-	button::click{
-		background-color: $color-four;
-		border: 2px solid $color-five;
+	button:active{
+		background:
+        	linear-gradient($color-three, transparent),
+        	linear-gradient(to top left, $color-four, transparent),
+        	linear-gradient(to top right, $color-three, transparent);
+    	background-blend-mode: screen;
 	}
 }
 

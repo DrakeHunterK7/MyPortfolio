@@ -5,20 +5,26 @@
   --angle: 90deg;
 }
 
+#root {
+	height: 100vh;
+}
+
 html, body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	background-image: url("../../Assets/portfolioskybox.png");
 	animation: scroll-bg 60s linear infinite;
 	margin: 0;
-	height: 100%;
+	width: 100%;
+    height: 100%;
 }
 
 .HomePage {
-	margin: 0;
 	display: flex;
-  	flex-flow: column;
-  	height: 100vh;
+  	flex-direction: column;
+  	height: 100%;
+	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 }
 
 .model-container {
@@ -36,166 +42,105 @@ html, body {
 	flex: 1;
 }
 
-.main-menu-container {
+.header {
+	background:
+		linear-gradient($color-one, transparent),
+		linear-gradient(to top left, $color-one, transparent),
+		linear-gradient(to top right, $color-two, transparent);
+	background-blend-mode: screen;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
 	display: flex;
-	flex-direction: column;
-	height: 100%;
-	justify-content: space-between;
-	align-items: center;
+	width: 100%;
+	flex-direction: row;
+	vertical-align: middle;
+	flex: 1, 1, auto;
 
-	button {
-		margin: auto;
+	h1, h3 {
+		animation: change-color ease;
+		animation-iteration-count: infinite;
+		animation-duration: 1s;
+		animation-fill-mode: both;
+	}
+	h3 {
 		color: $color-four;
-		width: 25%;
-		border-radius: 10px;
-		font-size: larger;
+	}
+}
 
-		background:
+.body {
+	min-height:0;
+	height: 100%;
+	width: 100%;
+	flex-grow: 1;
+}
+
+.footer{
+	width: 100%;
+	background:
+        	linear-gradient($color-one, transparent),
+        	linear-gradient(to top left, $color-one, transparent),
+        	linear-gradient(to top right, $color-two, transparent);
+	background-blend-mode: screen;
+	color: $color-four;
+	padding-left: 1%;
+	text-align: center;
+}
+
+.tab-content {
+	height: 100%;
+	min-height: 0;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+
+	
+}
+
+.tab-pane {
+	width: 100% !important;
+}
+
+::-webkit-scrollbar{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-button {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: transparent;
+}
+
+.tabs {
+
+	flex:  0 1 40px;
+
+	background:
         	linear-gradient($color-one, transparent),
         	linear-gradient(to top left, $color-two, transparent),
         	linear-gradient(to top right, $color-two, transparent);
-    	background-blend-mode: screen;
-		border: 0px solid $color-one;
-		padding: 1%;
-	}
+	background-blend-mode: screen;
 
-	button:hover{
+	:hover{
 		background:
         	linear-gradient($color-two, transparent),
         	linear-gradient(to top left, $color-three, transparent),
         	linear-gradient(to top right, $color-two, transparent);
     	background-blend-mode: screen;
+		color: $color-four;
 	}
 
-	button:active{
+	.active{
 		background:
-        	linear-gradient($color-three, transparent),
-        	linear-gradient(to top left, $color-four, transparent),
-        	linear-gradient(to top right, $color-three, transparent);
+        	linear-gradient($color-one, transparent),
+        	linear-gradient(to top left, $color-one, transparent),
+        	linear-gradient(to top right, $color-one, transparent);
     	background-blend-mode: screen;
+		color: $color-one !important;
 	}
-}
-
-.game-programmer-header {
-	background-color: $color-one;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	vertical-align: middle;
-	flex: 0 1 auto;
-
-	h1, h3 {
-		animation: change-color ease;
-		animation-iteration-count: infinite;
-		animation-duration: 1s;
-		animation-fill-mode: both;
-	}
-	h3 {
-		color: $color-four;
-	}
-}
-
-.game-programmer-body {
-	width: 80%;
-	flex: 1 0 auto;
-}
-
-.game-programmer-body-container {
-	height: 100%;
-}
-
-.game-programmer-footer{
-	width: 100%;
-	background-color: $color-one;
-	color: $color-four;
-	padding-left: 1%;
-	flex:  0 1 40px;
-	text-align: center;
-}
-
-.tab-content-container {
-	background-color: $color-one;
-	border: 2px solid $color-two;
-	align-self: center;
-	height: 100%;
-}
-
-.game-programmer-tabs {
-	background-color: $color-two;
-
-	:hover{
-		background-color: $color-three !important;
-		color: $color-four;
-	}
-
-	.active{
-		background-color: $color-four !important;
-		color: $color-five !important;
-	}
-}
-
-.software-engineer-tabs {
-	background-color: $color-two;
-
-	:hover{
-		background-color: $color-three !important;
-		color: $color-four;
-	}
-
-	.active{
-		background-color: $color-four !important;
-		color: $color-five !important;
-	}
-}
-
-.software-engineer-header {
-    background-color: $color-one;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%;
-	display: flex;
-	width: 100%;
-	flex-direction: row;
-	vertical-align: middle;
-	flex: 0 1 auto;
-
-	h1, h3 {
-		animation: change-color ease;
-		animation-iteration-count: infinite;
-		animation-duration: 1s;
-		animation-fill-mode: both;
-	}
-	h3 {
-		color: $color-four;
-	}
-}
-
-.software-engineer-body {
-	width: 80%;
-	flex: 1 0 auto;
-}
-
-.software-engineer-body-container {
-	height: 100%;
-}
-
-.software-engineer-footer{
-	width: 100%;
-	background-color: $color-one;
-	color: $color-four;
-	padding-left: 1%;
-	flex:  0 1 40px;
-	text-align: center;
-}
-
-.tab-content-container {
-	background-color: $color-one;
-	border: 2px solid $color-two;
-	align-self: center;
-	height: 100%;
 }
 
 @keyframes change-color {

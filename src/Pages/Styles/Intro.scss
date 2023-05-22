@@ -32,7 +32,11 @@
 }
 
 .Intro-header {
-    background-color: $color-one;
+    background:
+        	linear-gradient($color-two, transparent),
+        	linear-gradient(to top left, $color-one, transparent),
+        	linear-gradient(to top right, $color-one, transparent);
+	background-blend-mode: screen;
     background-size: contain;
     background-position: center;
     min-height: 100vh;
@@ -72,7 +76,6 @@
 
 .Intro-text
 {
-  background-color: rgba($color-one, 0.7);
   padding: 0.5%;
   border-radius: 15px;
 }

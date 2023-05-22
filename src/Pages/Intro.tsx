@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import './Styles/Intro.scss';
-import { Button } from 'react-bootstrap';
 import selfie from '../Assets/latest-front-photo.jpg';
 import gamedevImage from '../Assets/gamedev-collage2.png';
 import soenImage from '../Assets/soen-collage.png';

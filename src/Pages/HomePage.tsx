@@ -13,7 +13,7 @@ import logoNameImage from '../Assets/logo-name.png';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import AboutMe from './AboutMe';
-import { Navbar } from 'react-bootstrap';
+
 
 
 function HomePage() {
@@ -30,7 +30,7 @@ function HomePage() {
 
   return (
     <div className="HomePage">
-        <div className={pType+"-header"}>
+        <div className="header">
 
             <div className="model-container">
               <Canvas camera={{ fov: 90, zoom: 4 }}>
@@ -50,16 +50,24 @@ function HomePage() {
             </div>
         </div>
 
-        <div className={pType+"-body"}>
-          <div className="main-menu-container">
-              <button>About Me</button>
-              <button>Projects and Experience</button>
-              <button>Skills</button>
-          </div>
+        <div className="body">
+            <Tabs
+              defaultActiveKey=""
+              className="tabs"
+              justify
+            >
+              <Tab eventKey="about-me" title="About Me">
+                  <AboutMe/>
+              </Tab>
+              <Tab eventKey="projects" title="Projects & Experience">
+              </Tab>
+              <Tab eventKey="skills" title="Skills">
+              </Tab>
+            </Tabs>
         </div>
 
-        <div className={pType+"-footer"}>
-          <p>This website was made entirely by me, using React, TypeScript and Sass! Hosted on Github :)</p>
+        <div className="footer">
+          <p>This website was made entirely by me, using React, TypeScript and Sass :)</p>
         </div>
     </div>
   );

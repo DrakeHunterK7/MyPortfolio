@@ -1,6 +1,10 @@
 
 import './Styles/AboutMe.scss';
 import selfie from '../Assets/latest-front-photo.jpg';
+import yt_img from '../Assets/youtube.png';
+import li_img from '../Assets/LinkedIn.png';
+import gh_img from '../Assets/github.png';
+import email_img from '../Assets/email.png';
 
 function AboutMe() {
 
@@ -8,15 +12,35 @@ function AboutMe() {
     <div className="AboutMe">
       <div className="personal-info-box">
         <div className="about-me-image">
-          <img alt="it me" src={selfie}/>
+          <img className="selfie-image" alt="it me" src={selfie}/>
 
           <div className="personal-info">
               <h3>Anas Peerzada</h3>
               <h4>Software Engineer, Game Programmer</h4>
-              <h6>Contact: apeerzada987@gmail.com</h6>
           </div>
-
         </div>
+
+        <div className="contact-info">
+
+           <div className="logos">
+            <a href="mailto:apeerzada987@gmail.com">
+                <img alt="it me" width={50} src={email_img}/>
+            </a>
+
+            <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
+              <img alt="it me" width={100} src={gh_img}/>
+            </a>
+
+            <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
+              <img alt="it me" width={100} src={li_img}/>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
+              <img alt="it me" width={100} src={yt_img}/>
+            </a>
+           </div>
+
+          </div>
 
         <hr/>
 
@@ -35,23 +59,15 @@ function AboutMe() {
             <h4>International Indian School, Jeddah, Saudi Arabia</h4>
               <h5>January 2012 - April 2016</h5>
               <ul>
+                <li>High School Diploma</li>
                 <li>Studied science and software</li>
-                <li>Formed a school club and was an executive member of the school library</li>
-                <li>Organized competitions at a school-wide level and was active in co-curricular activities.</li>
               </ul>
 
             </div>
         </div>
-
       </div>
 
       <div className="bio">
-
-        <div className="bio-paragraph">
-          <h2>Personal Profile</h2>
-          <p>I was born and raised in Saudi Arabia to two loving Indian parents, who have shaped everything I am today.</p>
-          
-        </div>
 
         <div className="bio-paragraph">
           <h2>Career Goals</h2>
@@ -86,9 +102,8 @@ function AboutMe() {
             potentially discovering something new to enjoy as
             a result.</p>
         </div>
-        
-
       </div>
+
     </div>
   );
 }

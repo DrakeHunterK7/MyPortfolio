@@ -28,7 +28,7 @@ html, body {
 }
 
 .model-container {
-	width: 9%;
+	width: 11%;
 }
 .header-logo-name {
 	margin-left: 1%;
@@ -94,12 +94,11 @@ html, body {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-
-	
+	margin-right: -25px;
 }
 
-.tab-pane {
-	width: 100% !important;
+.tab-content .tab-pane {
+
 }
 
 ::-webkit-scrollbar{

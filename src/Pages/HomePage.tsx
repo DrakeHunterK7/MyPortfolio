@@ -66,9 +66,7 @@ function HomePage() {
             </Tabs>
         </div>
 
-        <div className="footer">
-          <p>This website was made entirely by me, using React, TypeScript and Sass :)</p>
-        </div>
+       
     </div>
   );
 }

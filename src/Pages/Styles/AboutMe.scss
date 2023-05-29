@@ -3,18 +3,13 @@
 
 .AboutMe {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	padding: 1%;
 	display: flex;
 	align-items: stretch;
 	height: 100%;
 	width: 100%;
-
-	background:
-		linear-gradient(transparent, transparent),
-		linear-gradient(to top left, $color-one, transparent),
-		linear-gradient(to top right, $color-one, transparent);
-	background-blend-mode: screen;
-
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 700px;
 }
 
 .about-me-image {
@@ -33,6 +28,20 @@
 		animation: rotate 2.5s linear infinite;
 	  }
 	  margin-bottom: 2%;
+}
+
+.contact-info{
+	display: flex;
+	flex-direction: row;
+}
+
+.logos {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
 }
 
 .personal-info {
@@ -82,6 +91,7 @@
 	}
 
 	p {
+		text-align: justify;
 		color: $color-four;
 	}
 }

@@ -1,0 +1,38 @@
+[
+    {
+        "type": "indie",
+        "image_name": "captured_ocean_commotion.png",
+        "name": "Captured! Ocean Commotion"
+    },
+    {
+        
+        "type": "gamejam",
+        "image_name": "Snowfolie.jpg",
+        "name": "Snowfolie"
+    },
+    {
+        "type": "gamejam",
+        "image_name": "pizza_car_man.png",
+        "name": "Pizza Carman"
+    },
+    {
+        "type": "university",
+        "image_name": "space_conquest.png",
+        "name": "Space Conquest"
+    },
+    {
+        "type": "university",
+        "image_name": "house-carrigan.png",
+        "name": "House Carrigan"
+    },
+    {
+        "type": "indie",
+        "image_name": "chemical-chimpet.png",
+        "name": "Chemical Chimpet"
+    },
+    {
+        "type": "personal",
+        "image_name": "UnLeash.png",
+        "name": "UnLeash: Training Day"
+    }
+]

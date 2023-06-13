@@ -13,6 +13,7 @@ import logoNameImage from '../Assets/logo-name.png';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 
 
@@ -60,6 +61,7 @@ function HomePage() {
                   <AboutMe/>
               </Tab>
               <Tab eventKey="projects" title="Projects & Experience">
+                  <Projects/>
               </Tab>
               <Tab eventKey="skills" title="Skills">
               </Tab>

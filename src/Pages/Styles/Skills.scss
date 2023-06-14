@@ -90,6 +90,6 @@
 }
 
 .skills-colorA {
-	color: $color-one !important;
+	color: adjust-hue($color-two, 10%) !important;
 }
 

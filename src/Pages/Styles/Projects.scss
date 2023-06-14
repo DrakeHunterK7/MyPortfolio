@@ -22,6 +22,12 @@ hr {
 	color: $color-five;
 }
 
+.experience-paragraph {
+	text-align: center;
+	padding: 10px;
+	color: $color-four;
+	width: 100%;
+}
 .projects-container {
 	width: 100%;
 	justify-content: center;
@@ -43,6 +49,14 @@ hr {
 		animation-duration: 0.25s;
 		animation-fill-mode: both;
 	}
+}
+
+.projects-container-inner {
+	width: 100%;
+	justify-content: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .project-category {
@@ -67,35 +81,69 @@ hr {
 }
 
 .project-modal {
-	height: 100%;
-	width: 95%;
-	color: $color-four;
+	width: 85vw;
+	color: $color-five;
 	max-width: none !important;
-	max-height: none !important;
-
 }
 
 .project-modal .modal-content {
-	background-color: $color-two;
+	background:
+        	linear-gradient($color-three, transparent),
+        	linear-gradient(to top left, $color-one, transparent),
+        	linear-gradient(to top right, $color-one, transparent);
+	max-height: 90vh;
+}
+
+.project-date {
+	margin-bottom: 25px;
+}
+
+.modal-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	width: 100%;
 }
 
 .modal-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	overflow-y: scroll;
 
 	iframe {
+		aspect-ratio : 1 / 0.565;
 		border-radius: 25px;
+		width: 90%;
 	}
+}
+
+.project-description {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.download-button {
+	margin-left:auto;
+	margin-right:15px;
+	color: $color-two;
+	background-color: $color-four;
+	border-radius: 10px;
+	padding: 5px;
+	box-shadow: 2px 2px black;
+	
+	a {
+		text-decoration: none;
+		color: $color-two;
+	}
+
 }
 
 .modal-video-box {
 	width: 75%;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 
-	h3 {
+	h4 {
 		align-self: center;
 	}
 }

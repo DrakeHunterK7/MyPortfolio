@@ -40,7 +40,7 @@ function HomePage() {
                   <Model />
                 </Suspense>
                 <OrbitControls enableZoom={false} enablePan={false}/>
-                <Environment preset="sunset" />
+                <Environment preset='sunset' />
               </Canvas>
             </div>
             

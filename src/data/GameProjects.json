@@ -1,38 +1,263 @@
 [
     {
-        "type": "indie",
+        "date": "September 2019 - Present",
+        "type": "Indie",
         "image_name": "captured_ocean_commotion.png",
-        "name": "Captured! Ocean Commotion"
+        "name": "Captured! Ocean Commotion",
+        "video_link":"https://www.youtube.com/embed/qqIz1jFAxAM",
+        "download_link": "https://home-sick.itch.io/captured-ocean-commotion-demo",
+        "description": "Captured! Ocean Commotion is a project I did during my freelance programming career and, by far, the most ambitious project I have ever done. I was the only programmer on this project, alongside the creative director, Ian Mazgelis, who did the game design. The art was done by other freelance artists. A demo for the game is available, while the full game will start development in the near future.",
+        "responsibilities": [
+            "AI Programming",
+            "Animation Programming",
+            "Gameplay Programming",
+            "Level Scripting",
+            "UI Design and Programming",
+            "Art programming",
+            "Technical programming",
+            "Optimization",
+            "Basically everything, since I was the only programmer on this project"
+        ],
+        "challenges": [
+            "Creating a gadget system that relied on the precision of the analog stick on a controller",
+            "The variety and scope of the various AI enemies",
+            "Creating, scripting and optimizing levels with the required scale for the gameplay to work properly",
+            "Optimizing the game to run at 60fps on most hardware specifications",
+            "Scripting a huge number of events and moving pieces in the level and getting them all to work together",
+            "Cutscenes",
+            "Creating the Shell Hockey minigame as seen in the video above, everything from design, prototype to complete implementation"
+        ],
+        "learnings": [
+            "How to optimize algorithms for best performance",
+            "How to apply the required smoothing and corrections to analog stick input to create smooth and responsive analog stick gadget controls",
+            "How to render cutscenes, and optimize them",
+            "How to optimize art assets for better performance (caching multiple objects as one, loading objects only when needed, etc)",
+            "How to work with the physics and collision systems of Unreal Engine",
+            "How to design and implement a minigame",
+            "Everything needed to create a AAA quality 3d game."
+        ],
+        "engine": "Unreal Engine 4, Blueprints"
     },
     {
-        
-        "type": "gamejam",
+        "date": "January 2022 - April 2022",
+        "type": "Game Jam",
         "image_name": "Snowfolie.jpg",
-        "name": "Snowfolie"
+        "name": "Snowfolie",
+        "video_link": "https://www.youtube.com/embed/CdDxsHVQank",
+        "download_link": "https://george540.itch.io/snowfolie",
+        "description": "Snowfolie was our entry for the Ubisoft Game Lab 2022. The theme of Ubisoft Game Lab was anything to do with school, so we decided to make a game about throwing snowballs at each other during recess. One of my favorite game dev experiences ever",
+        "responsibilities": [
+            "Programming the various items and gadgets the players can use to attack each other with",
+            "Programming the player camera system",
+            "Programming the character customization for the multiplayer, and also synchronizing the player's clothing with the server so other players can see what we're wearing",
+            "Programming the team system, that allows players to pick teams before the match starts",
+            "Programming the lobby of the game, where the player can interact with various elements such as a radio, credits, tutorials, UI elements, etc",
+            "Optimization, especially towards the end of the project."
+        ],
+        "challenges": [
+            "This was my first time doing a multiplayer project, so figuring out the multiplayer essentials was a huge hurdle to overcome, even if my multiplayer responsibilities were limited",
+            "More specifically, synchronizing player actions with the server and the rest of the players was a big challenge that took a while to get right",
+            "Creating a complex gadget system that allowed for a variety of usages with minimal amount of input",
+            "Optimizing the game to run on the weakest PC",
+            "Navigating a big project with a big team (8 people) while being a full-time student and having only 4 months to make this game"
+        ],
+        "learnings": [
+            "Multiplayer basics, especially synchronization",
+            "How to use interfaces to create a gadget system that allowed for more flexibility while requiring the least amount of code",
+            "How to work with a big team of a diverse talent pool and ambitious without things going awry",
+            "Optimizing algorithms and game systems"
+        ],
+        "engine": "Unity, C#"
     },
     {
-        "type": "gamejam",
+        "date": "January 2022",
+        "type": "Game Jam",
         "image_name": "pizza_car_man.png",
-        "name": "Pizza Carman"
+        "name": "Pizza Carman",
+        "video_link": "https://www.youtube.com/embed/j1HkFvLO_nQ",
+        "download_link": "https://george540.itch.io/pizza-carman",
+        "description": "Pizza Carman was my first ever team project, working with 3 other awesome people to make a game in one week for the Global Game Jam 2022. The theme for this game jame was Duality, and so we decided to make a game about a shapeshifting pizza delivery man who can also turn into a car at free will.",
+        "responsibilities": [
+            "Programming the player character (movement, camera, interactions, etc)",
+            "Programming the AI NPCs as well as Car AI.",
+            "Programming a system to spawn NPCs and Cars on the map and track all NPCs to make sure nothing funky happens",
+            "Programming the UI elements of the game (Main Menu, Pause Menu, UI elements during gameplay, etc",
+            "Composing music for the main gameplay loop",
+            "Programming the switching mechanics to switch between player mode and car mode",
+            "Implementing sound effects for everything I made"
+        ],
+        "challenges": [
+            "Since we only had a week to make this game, we had to conceptualize, prototype and program a whole game with efficient use of time",
+            "Handling the various physics and collision implication of letting the player switch between a player and a rigidbody vehicle",
+            "Creating an AI NPC system that made NPCs behave realistically in a city environment, as well as optimizing such a system",
+            "Creating a Car AI system that spawned cars and ensured they drove across the city in a realistic fashion with realistic paths."
+        ],
+        "learnings": [
+            "Better understanding of the Unity physics and collision system",
+            "Better AI programming and pathfinding practices",
+            "Better UI design practices",
+            "Working in a team",
+            "How to create a game with a concept in a short amount of time. Focusing on what's important, making necessary compromises, understanding what is really needed to achieve something while still maintaining quality"
+        ],
+        "engine": "Unity, C#"
     },
     {
-        "type": "university",
+        "date": "January 2023 - April 2023",
+        "type": "University",
         "image_name": "space_conquest.png",
-        "name": "Space Conquest"
+        "name": "Space Conquest",
+        "video_link": "https://www.youtube.com/embed/KVk44J1-CPM",
+        "download_link": "none",
+        "description": "Space Conquest is a university project that was made as a team during the last semester of our Software Engineering program. The project was made as a final project for the course Advanced Game Development, where the goal was to create a space shooter in the vein of Star Wars Squadrons, with custom-built AI, custom-built collision systems, custom-built movement and custom-built pathfinding.",
+        "responsibilities": [
+            "Procedurally generating a grid-based nav mesh across our space levels so the ships can navigate",
+            "Implementing the A* pathfinding algorithm to guide ship movement, as well as allow for waypoint tactics based on various factors (staying away from hot areas, for example",
+            "Developing a Team-based group AI for the ships as well as its individual AI, all using Behavior Trees and several AI concepts",
+            "Helping with the overall game logic in multiple places (Ship scripts, shooting and controls, UI, etc)",
+            "Integrating every other aspect of the project with the AI systems, and vice-versa."
+        ],
+        "challenges": [
+            "The biggest challenge in the making of this game was the very complex AI we had to do implement as part of the requirements for this project.",
+            "I had to make a Team-based AI system that kept track of each ship and guided the role of each ship in a team",
+            "I also had to make individual AI for ships that informed the moment-to-moment behaviour of the ship, especially in regards to how it moved around the level",
+            "Procedurally generating a nav mesh that spanned tens of thousands of units in space that allowed for tactical pathfinding.",
+            "Doing all this while juggling other University courses and in just 3 months."
+        ],
+        "learnings": [
+            "How to implement Context-aware coordinated AI movement",
+            "Waypoint tactics, and how to implement A* pathfinding and modifying the basic algorithm to allow for waypoint tactics",
+            "How to make realistic AI using advanced decicion making concepts such as Fuzzy logic.",
+            "Optimzing AI algorithms to improve performance"
+        ],
+        "engine": "Unity, C#"
     },
     {
-        "type": "university",
+        "date": "September 2022 - December 2022",
+        "type": "University",
+        "image_name": "project-labyrinth.png",
+        "name": "Project Labyrinth",
+        "video_link": "https://www.youtube.com/embed/if5OZixD8aQ",
+        "download_link": "none",
+        "description": "Project Labyrinth is a first-person survival horror game with procedurally generated levels and a fixed narrative. This game was made as a university team project last year, and was the final project for the course Intro to Game Development.",
+        "responsibilities": [
+            "Implementing the first person gameplay systems, including camera, movement and all interaction between player and the world",
+            "Implementing the complex inventory system, as well as creating the many items the players can use in their journey to escape from the labyrinth",
+            "Programming the overall gameplay loop and logic, including objectives, game manager system and the transition between levels",
+            "Programming an event system that notified the player of events happening in the level that they might need to know about.",
+            "Helping with optimization, as well as with other tasks such as enemy AI, pathfinding and navmesh for the procedurally generated levels as well as the sound design"        ],
+        "challenges": [
+            "The biggest challenge with this game was the procedural generation. Although the procedural generation algorithm was done by my teammate Nick Sprott, we still had to do the work of integrating the rest of the systems with the the procedural generation",
+            "The next big challenge was to program the complex inventory system that was required for the necessary survival horror gameplay",
+            "Another big challenge was implementing the overall Game Manager system using the Singleton pattern that oversaw all aspects of the game"
+        ],
+        "learnings": [
+            "How to implement Game Managers using the Simpleton pattern",
+            "How to implement Inventory systems using Interfaces, as well as Unity Scriptable Objects",
+            "How to program quick and trusty FPS mechanics using proven fundamentals",
+            "How to implement coroutines, and proper multithreading to allow us to take advantage of the multiple cores of our CPUs for better performance",
+            "How to optimize games of a bigger scale on Unity"
+        ],
+        "engine": "Unity, C#"
+    },
+    {
+        "date": "October 2022 - November 2022",
+        "type": "University",
         "image_name": "house-carrigan.png",
-        "name": "House Carrigan"
+        "name": "House Carrigan",
+        "video_link": "https://www.youtube.com/embed/v8dlnQuhplA",
+        "download_link": "none",
+        "description": "House Carrigan is a game I made as an individual assignment for my Intro to Game Dev course in university. The goal was to create a Halloween-themed 2.5D reincarnation of the game Sunset Riders by Konami.",
+        "responsibilities": [
+            "Since this was an individual assignment, I was responsible for everything you see in the video above except for the art and sound assets, which were acquired from the Unity Asset Store and other online sources"
+        ],
+        "challenges": [
+            "This was my first time making a 2.5D game, so I had to understand and foresee any problems that might arise from converting a 3D view to 2D controls so as to ensure it's not confusing for the player",
+            "Implementing the cutscene towards the end, with so many variables and moving pieces to keep track of",
+            "Implementing the required elements of the project (which were a lot) within one month while juggling other courses"
+        ],
+        "learnings": [
+            "How to design a cutscene in Unity",
+            "How to design a responsive and readable 2.5D layout/controls that allows for more things to happen on screen, without harming readability or understandability",
+            "How to use a spline system to make things move in a predetermined curved path around the level (this is how the Boss enemy is implemented)",
+            "How to design game systems using prototyping and feedback to ensure the designs are working as intended.",
+            "How to optimize art assets as well as the various gameplay systems to run on the weakest of PCs"
+        ],
+        "engine": "Unity, C#"
     },
     {
-        "type": "indie",
+        "date": "December 2018 - April 2019",
+        "type": "Indie",
         "image_name": "chemical-chimpet.png",
-        "name": "Chemical Chimpet"
+        "name": "Chemical Chimpet",
+        "video_link": "https://www.youtube.com/embed/_jbssV99wes",
+        "download_link": "none",
+        "description": "Chemical Chimpet is one of the games I made during my career as a Freelance programmer. It is the first big freelance project I did as I started out my Freelance career in 2019. Chemical Chimpet is a 2D puzzle solving game where you combine different molecules together to remove them from the board while racing against time. A vertical slice of the game was finished but the main project is on hold for the moment, with potential to be revived in the future.",
+        "responsibilities": [
+            "I was the sole programmer on the project, along with the creative lead, Ian Mazgelis, who lead the overall creative vision of the game and the design of it.",
+            "Programming the complex molecule system that allowed you to create and break bonds, attach entire molecules to other molecules, etc etc",
+            "Program the board system to generate atoms and molecules on the board to start you off with",
+            "Creating a game spawning system that allowed you to customize your level of difficulty",
+            "Programming the UI and Animations"
+        ],
+        "challenges": [
+            "No doubt the biggest challenge of this project was the complex molecule system.",
+            "The molecule system involved individual atoms (atoms of various types and number of bonds) being connected to other atoms to form a single bound unit known as a molecule. These molecules would then move and behave as one entity",
+            "Such a system required massive numbers of interactions happening with the molecule system",
+            "Therefore, the biggest challenge of this project was to figure out the optimal data structures, algorithms and practices to ensure a system of such scale could work perfectly with no bugs"
+        ],
+        "learnings": [
+            "Usage of recursion and lists to store molecules (or any related entities in general)",
+            "Furthered understanding of data structures and algorithsm"
+        ],
+        "engine": "Unreal Engine 4, Blueprints"
     },
     {
-        "type": "personal",
+        "date": "October 2018",
+        "type": "Personal",
         "image_name": "UnLeash.png",
-        "name": "UnLeash: Training Day"
+        "name": "UnLeash: Training Day",
+        "video_link": "https://www.youtube.com/embed/kdjcpzyrIv0",
+        "download_link": "https://gamejolt.com/games/UnLeash/386402",
+        "description": "This was one of my personal projects I made when I first started out with game development, all the way back in 2017. UnLeash: Training Day is an FPS shooter with a grappling hook, think Just Cause meets DOOM.",
+        "responsibilities": [
+            "Everything you see in the video was made by me, including the player hand and arms model, and other art assets",
+            "The only things I didn't do was the music, which was sourced from free sources on the internet",
+            "The overall design of the game (Level Design, Game Design, Encounter Design, etc)",
+            "Programming the various types of enemies using straight logic as well as simple Unreal 4 Behaviour Trees"
+        ],
+        "challenges": [
+            "Creating a good leash line system that behaved realistically",
+            "Creating a good grappling hook system that felt good to use",
+            "Creating responsive shooting with the required feedback to make it feel good",
+            "Creating interesting levels and small campaign with very basic story and text-to-speech voice lines"
+        ],
+        "learnings": [
+            "How to actually create a game with a small, well-defined scope and actually finish it in a reasonable amount of time (took me a week to make this game)",
+            "How to use the Unreal 4 line system to create a laser grappling hook that behaves realistically.",
+            "Game Design and Programming Basics",
+            "Create complex AI enemies that are also fun to play against",
+            "3D modelling and animation with Blender"
+        ],
+        "engine": "Unreal Engine 4, Blueprints"
+    },
+    {
+        "date": "2016",
+        "type": "Personal",
+        "image_name": "parcore.png",
+        "name": "ParCore",
+        "video_link": "https://www.youtube.com/embed/jsvCG41032A",
+        "download_link": "https://gamejolt.com/games/Parcore/344858",
+        "description": "This was the first proper game I ever made, start to finish. It's a simple game about jumping around using a grappling hook and using the momentum of the propulsion to navigate the short level.",
+        "responsibilities": [
+            "Everything you see in the video above, excluding the music"
+        ],
+        "challenges": [
+            "While this wasn't the first game I ever made, this was the first proper game I actually finished making, start to finish. As such, I had to scope out the game and be realistic about everything"
+        ],
+        "learnings": [
+            "How to make a realistically scoped game within a realistic timeframe",
+            "Unreal Engine 4 basics, including the physics systems, collision systems, Blueprints and basically everything except the Sequence Editor"
+        ],
+        "engine": "Unreal Engine 4, Blueprints"
     }
 ]

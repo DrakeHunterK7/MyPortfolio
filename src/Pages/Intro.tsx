@@ -34,7 +34,7 @@ function Intro() {
               </button>
             </Link>
 
-            <Link to={`/portfolio/software-engineer`}>
+            {/* <Link to={`/portfolio/software-engineer`}>
               <button  
                 className="btn btn-primary soen-button"
                 onMouseEnter={() => setBgImageClass2("imgFadeIn")}
@@ -42,7 +42,7 @@ function Intro() {
               >
                 Software Engineer Portfolio
               </button>
-            </Link>
+            </Link> */}
           </div>
       </header>
     </div>

@@ -54,7 +54,7 @@ function HomePage() {
 
         <div className="body">
             <Tabs
-              defaultActiveKey=""
+              defaultActiveKey="about-me"
               className="tabs"
               justify
             >

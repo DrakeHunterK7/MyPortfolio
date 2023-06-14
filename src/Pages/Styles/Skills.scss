@@ -36,13 +36,36 @@
 }
 
 .skills-category-box {
-	background:
-        	linear-gradient($color-three, transparent),
-        	linear-gradient(to top left, $color-one, transparent),
-        	linear-gradient(to top right, $color-one, transparent);
+	background-image:
+        	linear-gradient(to right, $color-three, adjust-hue($color-three, 20%));
 	border-radius: 15px;
 	padding: 15px;
 	box-shadow: 5px 5px $color-two;
+}
+
+.skills-category-box-simple {
+	background-image:
+        	linear-gradient(to right, $color-three, adjust-hue($color-three, 20%)) !important;
+}
+
+.skills-category-box-colorA {
+	background-image:
+		linear-gradient(to right, adjust-hue($color-three, 20%), adjust-hue($color-three, 40%)) !important;
+}
+
+.skills-category-box-colorB {
+	background-image:
+		linear-gradient(to right, adjust-hue($color-three, 40%), adjust-hue($color-three, 60%)) !important;
+}
+
+.skills-category-box-colorC {
+	background-image:
+		linear-gradient(to right, adjust-hue($color-three, 60%), adjust-hue($color-three, 80%)) !important;
+}
+
+.skills-category-box-colorD {
+	background-image:
+		linear-gradient(to right, adjust-hue($color-three, 80%), adjust-hue($color-three, 100%)) !important;
 }
 
 .skills-category-box-title {
@@ -56,14 +79,17 @@
 	border-radius: 15px;
 	padding: 15px 15px 7px 15px;
 	color: $color-five;
-	box-shadow: 5px 5px $color-two;
+	box-shadow: 5px 5px $color-one;
 }
 
 .skill-badge {
-	background-color: $color-four !important;
-	color: $color-one;
-	font-size: large;
+	color: $color-four;
+	font-size:large;
 	margin: 5px;
-	border: 2px solid $color-three;
+	box-shadow: 5px 5px $color-one;
+}
+
+.skills-colorA {
+	color: $color-one !important;
 }
 

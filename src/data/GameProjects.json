@@ -76,7 +76,7 @@
         "name": "Pizza Carman",
         "video_link": "https://www.youtube.com/embed/j1HkFvLO_nQ",
         "download_link": "https://george540.itch.io/pizza-carman",
-        "description": "Pizza Carman was my first ever team project, working with 3 other awesome people to make a game in one week for the Global Game Jam 2022. The theme for this game jame was Duality, and so we decided to make a game about a shapeshifting pizza delivery man who can also turn into a car at free will.",
+        "description": "Pizza Carman was my first ever team project, working with 3 other awesome people to make a game in one week for the Global Game Jam 2022. The theme for this game jam was Duality, and so we decided to make a game about a shapeshifting pizza delivery man who can also turn into a car at free will.",
         "responsibilities": [
             "Programming the player character (movement, camera, interactions, etc)",
             "Programming the AI NPCs as well as Car AI.",

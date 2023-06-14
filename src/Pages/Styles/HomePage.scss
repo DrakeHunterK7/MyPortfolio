@@ -40,6 +40,10 @@ html, body {
 	align-self: center;
 	text-align: right;
 	flex: 1;
+
+	p {
+		color: $color-four;
+	}
 }
 
 .header {

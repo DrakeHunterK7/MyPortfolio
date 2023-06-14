@@ -49,6 +49,7 @@ function HomePage() {
 
             <div className="header-portfolio-type">
               <h3>{portfolioTitle()} Portfolio</h3>
+              <p>Website made by me :)</p>
             </div>
         </div>
 

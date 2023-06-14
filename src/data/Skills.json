@@ -5,7 +5,7 @@
 
     "game_dev_skills": ["Gameplay Programming",  "AI Programming", "Technical Programming", "Level Scripting", 
     "UI programming", "Animation programming", "Pathfinding (State Space Search Algorithms)", "Navmesh", 
-    "Finite State Machines (especially Decision Trees)", "Waypoint Tactics", "Steering and Kinematic movement"],
+    "Finite State Machines (especially Decision Trees)", "Waypoint Tactics", "Steering and Kinematic movement", "Game Design Principles", " Rational Design"],
 
     "math_physics_skills": ["3D Mathematics", "Linear Algebra", "Calculus", "Statistics", "Newtonian Physics"],
 

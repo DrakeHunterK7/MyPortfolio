@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://DrakeHunterK7.github.io/MyPortfolio",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.68.3",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test:unit": "react-scripts test",
@@ -55,6 +58,7 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.8",
     "react-router-dom": "^6.11.2"
   }

@@ -4,9 +4,9 @@ import { useState } from "react";
 import { useMatch } from "react-router-dom";
 import { Suspense } from "react";
 
-import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
-import { Model } from "./../Assets/Apcube";
+// import { Canvas } from "@react-three/fiber";
+// import { Environment, OrbitControls } from "@react-three/drei";
+// import { Model } from "./../Assets/Apcube";
 
 import logoNameImage from '../Assets/logo-name.png';
 
@@ -34,7 +34,7 @@ function HomePage() {
     <div className="HomePage">
         <div className="header">
 
-            <div className="model-container">
+            {/* <div className="model-container">
               <Canvas camera={{ fov: 90, zoom: 4 }}>
                 <ambientLight intensity={1.25}/>
                 <Suspense fallback={null}>
@@ -43,7 +43,7 @@ function HomePage() {
                 <OrbitControls enableZoom={false} enablePan={false}/>
                 <Environment preset='sunset' />
               </Canvas>
-            </div>
+            </div> */}
             
             <img src={logoNameImage} alt="name-logo" className="header-logo-name"/>
 

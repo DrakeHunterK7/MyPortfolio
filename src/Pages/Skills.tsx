@@ -1,143 +1,93 @@
 
-import './Styles/Projects.scss';
-import { useState } from "react";
-import gameProjects from '../data/GameProjects.json'
-import Modal from 'react-bootstrap/Modal';
+import './Styles/Skills.scss';
+import skills from '../data/Skills.json'
 import Badge from 'react-bootstrap/Badge';
 
 
-type Project = {
-  date: string,
-  type: string
-  image_name: string,
-  name: string,
-  video_link: string,
-  download_link: string,
-  description: string,
-  responsibilities: string[],
-  challenges: string[],
-  learnings: string[],
-  engine: string
-}
-
-function Projects() {
-
-  const [show, setShow] = useState(false);
-  const emptyProject : Project = {
-    date: "",
-    type: "",
-    image_name: "",
-    name: "",
-    video_link: "",
-    download_link: "",
-    description: "",
-    responsibilities: [],
-    challenges: [],
-    learnings: [],
-    engine: ""
-  }
-  let [selectedProject, setSelectedProject] = useState(emptyProject);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+function Skills() {
 
   return (
-    <div className="Projects">
-      <div className='projects-main-div'>
-        <div id="indie-projects" className='projects-container'>
-          <div className='experience-paragraph'>
-              <h4>I began making games as a hobby in 2014, then moved on to making more serious games around 2016. Here are all the finished games I've ever made since 2016.</h4>
-              <h5>These include freelance indie game projects, university projects, game jam projects as well as my own personal projects.</h5>
-          </div>
-
-          <div className='projects-container-inner'>
-          {
-            gameProjects.map(project => {
-              return (
-                <div className="project-box" onClick={event => {
-                  handleShow();
-                  setSelectedProject(project);
-                  }}>
-                  <img alt={project.type} width={150} src={require("../Assets/Game Projects/Game Project Logos/"+project.image_name)}/>
-                  <p>{project.name}</p>
-                </div>
-              )
-            })
-          }
-          </div>
-        </div>
-      </div>
-
-      <Modal dialogClassName="project-modal" show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>
-            <div className='modal-title'>
-              <h2>{selectedProject.name}</h2>
-              <Badge bg="primary">{selectedProject.type} Project</Badge>
-              <Badge bg="secondary">{selectedProject.engine}</Badge>
-              { selectedProject.download_link !== "none" &&
-                <div className='download-button'>
-                  <a href={selectedProject.download_link} target="_blank" rel="noreferrer">
-                    Download Game
-                  </a>
-                </div>
+    <div className="Skills">
+      <div className='skills-main-div'>
+        <div className='skills-container'>
+            <div className="skills-category-box">
+              <div className="skills-category-box-title">
+                <h4>Software Engineering Skills</h4>
+              </div>
+              {
+                skills.software_skills.map(skill => {
+                  return (
+                    <div className="project-box">
+                      <Badge className='skill-badge'>{skill}</Badge>
+                    </div>
+                  )
+                  })
               }
             </div>
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body className='modal-body'>
-          <div className = 'project-date'>
-            <h3>{selectedProject.date}</h3>
-          </div>
-          <div className='modal-video-box'>
-           <div className='modal-iframe-container'>
-            <iframe title='Video Demonstration'
-              src={selectedProject.video_link}>
-            </iframe>
-           </div>
-          </div>
 
-          <div className="project-description">
-            <p>{selectedProject.description}</p>
-            <h3>My chief responsibilities for this project: </h3>
-            <ul>
-            {
-              selectedProject.responsibilities.map(point => {
-                return (
-                  <li>{point}</li>
-                )
-              })
-            }
-            </ul>
+            <div className="skills-category-box">
+              <div className="skills-category-box-title">
+                <h4>Game Development Skills</h4>
+              </div>
+              {
+                skills.game_dev_skills.map(skill => {
+                  return (
+                    <div className="project-box">
+                      <Badge className='skill-badge'>{skill}</Badge>
+                    </div>
+                  )
+                  })
+              }
+            </div>
 
-            <h3>Key challenges I faced during this project: </h3>
-            <ul>
-            {
-              selectedProject.challenges.map(point => {
-                return (
-                  <li>{point}</li>
-                )
-              })
-            }
-            </ul>
+            <div className="skills-category-box">
+              <div className="skills-category-box-title">
+                <h4>Programming Languages</h4>
+              </div>
+              {
+                skills.programming_languages.map(skill => {
+                  return (
+                    <div className="project-box">
+                      <Badge className='skill-badge'>{skill}</Badge>
+                    </div>
+                  )
+                  })
+              }
+            </div>
 
-            <h3>Key things I learned while working on this project: </h3>
-            <ul>
-            {
-              selectedProject.learnings.map(point => {
-                return (
-                  <li>{point}</li>
-                )
-              })
-            }
-            </ul>
-          </div>
-          
-        </Modal.Body>
-      </Modal>
+            <div className="skills-category-box">
+              <div className="skills-category-box-title">
+                <h4>Math and Physics Skills</h4>
+              </div>
+              {
+                skills.math_physics_skills.map(skill => {
+                  return (
+                    <div className="project-box">
+                      <Badge className='skill-badge'>{skill}</Badge>
+                    </div>
+                  )
+                  })
+              }
+            </div>
 
+            <div className="skills-category-box">
+              <div className="skills-category-box-title">
+                <h4>Soft Skills</h4>
+              </div>
+              {
+                skills.soft_skills.map(skill => {
+                  return (
+                    <div className="project-box">
+                      <Badge className='skill-badge'>{skill}</Badge>
+                    </div>
+                  )
+                  })
+              }
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Projects;
+export default Skills;

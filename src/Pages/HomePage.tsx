@@ -14,6 +14,7 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Skills from './Skills';
 
 
 
@@ -64,6 +65,7 @@ function HomePage() {
                   <Projects/>
               </Tab>
               <Tab eventKey="skills" title="Skills">
+                  <Skills/>
               </Tab>
             </Tabs>
         </div>

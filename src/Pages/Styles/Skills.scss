@@ -1,0 +1,69 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixins.scss";
+
+.Skills {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: flex;
+	align-items: stretch;
+	height: 100%;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 700px;
+}
+
+.skills-main-div {
+	margin-top: 50px;
+	width: 100%;
+	align-items: center !important;
+}
+
+.skills-container {
+	width: 100%;
+	justify-content: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 30px;
+
+}
+
+.skills-container-inner {
+	width: 100%;
+	justify-content: center;
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.skills-category-box {
+	background:
+        	linear-gradient($color-three, transparent),
+        	linear-gradient(to top left, $color-one, transparent),
+        	linear-gradient(to top right, $color-one, transparent);
+	border-radius: 15px;
+	padding: 15px;
+	box-shadow: 5px 5px $color-two;
+}
+
+.skills-category-box-title {
+	background:
+        	linear-gradient($color-three, transparent),
+        	linear-gradient(to top left, $color-one, $color-three),
+        	linear-gradient(to top right, $color-one, $color-three);
+	text-align: center;
+	position: relative;
+	bottom:30px;
+	border-radius: 15px;
+	padding: 15px 15px 7px 15px;
+	color: $color-five;
+	box-shadow: 5px 5px $color-two;
+}
+
+.skill-badge {
+	background-color: $color-four !important;
+	color: $color-one;
+	font-size: large;
+	margin: 5px;
+	border: 2px solid $color-three;
+}
+

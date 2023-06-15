@@ -6,6 +6,7 @@
         "name": "Captured! Ocean Commotion",
         "video_link":"https://www.youtube.com/embed/qqIz1jFAxAM",
         "download_link": "https://home-sick.itch.io/captured-ocean-commotion-demo",
+        "github_link": "none",
         "description": "Captured! Ocean Commotion is a project I did during my freelance programming career and, by far, the most ambitious project I have ever done. I was the only programmer on this project, alongside the creative director, Ian Mazgelis, who did the game design. The art was done by other freelance artists. A demo for the game is available, while the full game will start development in the near future.",
         "responsibilities": [
             "AI Programming",
@@ -45,6 +46,7 @@
         "name": "Snowfolie",
         "video_link": "https://www.youtube.com/embed/CdDxsHVQank",
         "download_link": "https://george540.itch.io/snowfolie",
+        "github_link": "none",
         "description": "Snowfolie was our entry for the Ubisoft Game Lab 2022. The theme of Ubisoft Game Lab was anything to do with school, so we decided to make a game about throwing snowballs at each other during recess. One of my favorite game dev experiences ever",
         "responsibilities": [
             "Programming the various items and gadgets the players can use to attack each other with",
@@ -76,6 +78,7 @@
         "name": "Pizza Carman",
         "video_link": "https://www.youtube.com/embed/j1HkFvLO_nQ",
         "download_link": "https://george540.itch.io/pizza-carman",
+        "github_link": "none",
         "description": "Pizza Carman was my first ever team project, working with 3 other awesome people to make a game in one week for the Global Game Jam 2022. The theme for this game jam was Duality, and so we decided to make a game about a shapeshifting pizza delivery man who can also turn into a car at free will.",
         "responsibilities": [
             "Programming the player character (movement, camera, interactions, etc)",
@@ -108,6 +111,7 @@
         "name": "Space Conquest",
         "video_link": "https://www.youtube.com/embed/KVk44J1-CPM",
         "download_link": "none",
+        "github_link": "https://github.com/DrakeHunterK7/COMP-476-DeadPixel",
         "description": "Space Conquest is a university project that was made as a team during the last semester of our Software Engineering program. The project was made as a final project for the course Advanced Game Development, where the goal was to create a space shooter in the vein of Star Wars Squadrons, with custom-built AI, custom-built collision systems, custom-built movement and custom-built pathfinding.",
         "responsibilities": [
             "Procedurally generating a grid-based nav mesh across our space levels so the ships can navigate",
@@ -138,6 +142,7 @@
         "name": "Project Labyrinth",
         "video_link": "https://www.youtube.com/embed/if5OZixD8aQ",
         "download_link": "none",
+        "github_link": "https://github.com/DrakeHunterK7/Project-Labyrinth",
         "description": "Project Labyrinth is a first-person survival horror game with procedurally generated levels and a fixed narrative. This game was made as a university team project last year, and was the final project for the course Intro to Game Development.",
         "responsibilities": [
             "Implementing the first person gameplay systems, including camera, movement and all interaction between player and the world",
@@ -166,6 +171,7 @@
         "name": "House Carrigan",
         "video_link": "https://www.youtube.com/embed/v8dlnQuhplA",
         "download_link": "none",
+        "github_link": "none",
         "description": "House Carrigan is a game I made as an individual assignment for my Intro to Game Dev course in university. The goal was to create a Halloween-themed 2.5D reincarnation of the game Sunset Riders by Konami.",
         "responsibilities": [
             "Since this was an individual assignment, I was responsible for everything you see in the video above except for the art and sound assets, which were acquired from the Unity Asset Store and other online sources"
@@ -191,6 +197,7 @@
         "name": "Chemical Chimpet",
         "video_link": "https://www.youtube.com/embed/_jbssV99wes",
         "download_link": "none",
+        "github_link": "none",
         "description": "Chemical Chimpet is one of the games I made during my career as a Freelance programmer. It is the first big freelance project I did as I started out my Freelance career in 2019. Chemical Chimpet is a 2D puzzle solving game where you combine different molecules together to remove them from the board while racing against time. A vertical slice of the game was finished but the main project is on hold for the moment, with potential to be revived in the future.",
         "responsibilities": [
             "I was the sole programmer on the project, along with the creative lead, Ian Mazgelis, who lead the overall creative vision of the game and the design of it.",
@@ -218,6 +225,7 @@
         "name": "UnLeash: Training Day",
         "video_link": "https://www.youtube.com/embed/kdjcpzyrIv0",
         "download_link": "https://gamejolt.com/games/UnLeash/386402",
+        "github_link": "none",
         "description": "This was one of my personal projects I made when I first started out with game development, all the way back in 2017. UnLeash: Training Day is an FPS shooter with a grappling hook, think Just Cause meets DOOM.",
         "responsibilities": [
             "Everything you see in the video was made by me, including the player hand and arms model, and other art assets",
@@ -247,6 +255,7 @@
         "name": "ParCore",
         "video_link": "https://www.youtube.com/embed/jsvCG41032A",
         "download_link": "https://gamejolt.com/games/Parcore/344858",
+        "github_link": "none",
         "description": "This was the first proper game I ever made, start to finish. It's a simple game about jumping around using a grappling hook and using the momentum of the propulsion to navigate the short level.",
         "responsibilities": [
             "Everything you see in the video above, excluding the music"

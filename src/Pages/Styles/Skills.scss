@@ -12,6 +12,10 @@
 	padding-bottom: 700px;
 }
 
+.skill-box {
+	text-align: center;
+}
+
 .skills-main-div {
 	margin-top: 50px;
 	width: 100%;
@@ -23,8 +27,13 @@
 	justify-content: center;
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: 30px;
+	gap: 0px;
 
+}
+
+.skills-box-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .skills-container-inner {
@@ -41,6 +50,7 @@
 	border-radius: 15px;
 	padding: 15px;
 	box-shadow: 5px 5px $color-two;
+	max-width: 20%;
 }
 
 .skills-category-box-simple {
@@ -84,7 +94,7 @@
 
 .skill-badge {
 	color: $color-four;
-	font-size:large;
+	font-size:small;
 	margin: 5px;
 	box-shadow: 5px 5px $color-one;
 }

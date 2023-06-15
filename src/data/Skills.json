@@ -1,11 +1,11 @@
 {
     "software_skills": ["Data Structures and Algorithms", 
-    "Object Oriented Design and Programming", "Git and Github", "SQL and NoSQL Databases", 
+    "OOP", "Git and Github", "JIRA", "SQL and NoSQL Databases", 
     "Scripting", "Documentation", "Unit and System Testing", "Debugging", "Full-Stack Development", "Design Patterns", "Multithreading", "Technical Writing"],
 
     "game_dev_skills": ["Gameplay Programming",  "AI Programming", "Technical Programming", "Level Scripting", 
-    "UI programming", "Animation programming", "Pathfinding (State Space Search Algorithms)", "Navmesh", 
-    "Finite State Machines (especially Decision Trees)", "Waypoint Tactics", "Steering and Kinematic movement", "Game Design Principles", " Rational Design"],
+    "UI programming", "Animation programming", "Pathfinding", "A* Pathfinding", "Navmesh", 
+    "Finite State Machines", "Decision Trees", "Waypoint Tactics", "Steering and Kinematic movement", "Game Design Principles", " Rational Design"],
 
     "math_physics_skills": ["3D Mathematics", "Linear Algebra", "Calculus", "Statistics", "Newtonian Physics"],
 

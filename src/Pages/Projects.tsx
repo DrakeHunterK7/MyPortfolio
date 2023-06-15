@@ -13,6 +13,7 @@ type Project = {
   name: string,
   video_link: string,
   download_link: string,
+  github_link: string,
   description: string,
   responsibilities: string[],
   challenges: string[],
@@ -30,6 +31,7 @@ function Projects() {
     name: "",
     video_link: "",
     download_link: "",
+    github_link: "",
     description: "",
     responsibilities: [],
     challenges: [],
@@ -79,6 +81,13 @@ function Projects() {
                 <div className='download-button'>
                   <a href={selectedProject.download_link} target="_blank" rel="noreferrer">
                     Download Game
+                  </a>
+                </div>
+              }
+              { selectedProject.github_link !== "none" &&
+                <div className='download-button'>
+                  <a href={selectedProject.github_link} target="_blank" rel="noreferrer">
+                    GitHub
                   </a>
                 </div>
               }

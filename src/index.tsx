@@ -16,6 +16,7 @@ root.render(
       <Route index element={<Intro/>} />
       <Route path="portfolio/game-programmer" element={<HomePage />} />
       <Route path="portfolio/software-engineer" element={<HomePage />} />
+      <Route path="*" element= {<HomePage/>} />
     </Routes>
   </BrowserRouter>
 );

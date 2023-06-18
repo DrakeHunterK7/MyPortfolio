@@ -19,7 +19,7 @@ function Skills() {
                   skills.software_skills.map(skill => {
                     return (
                       <div className="skill-box">
-                        <Badge className='skill-badge skills-category-box-simple'>{skill}</Badge>
+                        <Badge className='skill-badge skill-badge-background'>{skill}</Badge>
                       </div>
                     )
                     })
@@ -36,7 +36,7 @@ function Skills() {
                 skills.game_dev_skills.map(skill => {
                   return (
                     <div className="project-box">
-                      <Badge className='skill-badge skills-category-box-colorA'>{skill}</Badge>
+                      <Badge className='skill-badge skill-badge-background'>{skill}</Badge>
                     </div>
                   )
                   })
@@ -53,7 +53,7 @@ function Skills() {
                 skills.programming_languages.map(skill => {
                   return (
                     <div className="project-box">
-                      <Badge className='skill-badge skills-category-box-colorB'>{skill}</Badge>
+                      <Badge className='skill-badge skill-badge-background'>{skill}</Badge>
                     </div>
                   )
                   })
@@ -70,7 +70,7 @@ function Skills() {
                 skills.math_physics_skills.map(skill => {
                   return (
                     <div className="project-box">
-                      <Badge className='skill-badge skills-category-box-colorC skills-colorA'>{skill}</Badge>
+                      <Badge className='skill-badge skill-badge-background'>{skill}</Badge>
                     </div>
                   )
                   })
@@ -87,7 +87,7 @@ function Skills() {
                 skills.soft_skills.map(skill => {
                   return (
                     <div className="project-box">
-                      <Badge className='skill-badge skills-category-box-colorD skills-colorA'>{skill}</Badge>
+                      <Badge className='skill-badge skill-badge-background'>{skill}</Badge>
                     </div>
                   )
                   })

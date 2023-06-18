@@ -92,6 +92,11 @@
 	box-shadow: 5px 5px $color-one;
 }
 
+.skill-badge-background {
+	background-image:
+		linear-gradient(to right, adjust-hue($color-three, 40%), adjust-hue($color-three, 60%)) !important;
+}
+
 .skill-badge {
 	color: $color-four;
 	font-size:small;

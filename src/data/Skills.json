@@ -9,7 +9,7 @@
 
     "math_physics_skills": ["3D Mathematics", "Linear Algebra", "Calculus", "Statistics", "Newtonian Physics"],
 
-    "programming_languages": ["C++", "C#", "Java", "Python", "Unreal Blueprints", "Javascript", "HTML", "CSS", "Typescript", "SQL", "Kotlin"],
+    "programming_languages": ["C++", "C#", "Java", "Python", "Unreal Blueprints", "Javascript", "HTML", "CSS", "Typescript", "SQL", "Kotlin", "XML", "XAML", "JSON"],
 
     "soft_skills": ["Creativity", "Problem-Solving", "Critical Thinking", "Teamwork", "Writing", "Management", "Discipline"]
 }

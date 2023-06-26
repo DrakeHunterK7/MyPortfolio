@@ -3,8 +3,11 @@ import './Styles/Skills.scss';
 import skills from '../data/Skills.json'
 import Badge from 'react-bootstrap/Badge';
 
+type BasicProps = {
+  portfolioType: string;
+}
 
-function Skills() {
+function Skills({ portfolioType } : BasicProps) {
 
   return (
     <div className="Skills">

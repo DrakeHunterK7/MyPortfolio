@@ -1,12 +1,7 @@
 
 import './Styles/HomePage.scss';
-import { useState } from "react";
-import { useMatch } from "react-router-dom";
-import { Suspense } from "react";
-
-// import { Canvas } from "@react-three/fiber";
-// import { Environment, OrbitControls } from "@react-three/drei";
-// import { Model } from "./../Assets/Apcube";
+import { useEffect, useState, useRef } from "react";
+import { useLocation, useMatch, useParams } from "react-router-dom";
 
 import logoNameImage from '../Assets/logo-name.png';
 
@@ -16,35 +11,19 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
 
-
-
 function HomePage() {
 
-  const match = useMatch('portfolio/:portfolioType');
-  var [ pType ] = useState(match?.params.portfolioType);
+  const { portfolioType } = useParams()
+  var [ pType ] = useState(portfolioType)
 
   function portfolioTitle() {
-    if(pType === 'game-programmer')
-      return 'Game Programmer'
-    else
-      return 'Software Engineer'
+    var cleanString = pType?.replace("-", " ")
+    return cleanString
   }
 
   return (
     <div className="HomePage">
         <div className="header">
-
-            {/* <div className="model-container">
-              <Canvas camera={{ fov: 90, zoom: 4 }}>
-                <ambientLight intensity={1.25}/>
-                <Suspense fallback={null}>
-                  <Model />
-                </Suspense>
-                <OrbitControls enableZoom={false} enablePan={false}/>
-                <Environment preset='sunset' />
-              </Canvas>
-            </div> */}
-            
             <img src={logoNameImage} alt="name-logo" className="header-logo-name"/>
 
             <div className="header-portfolio-type">
@@ -53,25 +32,26 @@ function HomePage() {
             </div>
         </div>
 
-        <div className="body">
+        {
+          pType != null &&
+          <div className="body">
             <Tabs
               defaultActiveKey="about-me"
               className="tabs"
               justify
             >
               <Tab eventKey="about-me" title="About Me">
-                  <AboutMe/>
+                  <AboutMe portfolioType={pType}/>
               </Tab>
               <Tab eventKey="projects" title="Projects & Experience">
-                  <Projects/>
+                  <Projects portfolioType={pType}/>
               </Tab>
               <Tab eventKey="skills" title="Skills">
-                  <Skills/>
+                  <Skills portfolioType={pType}/>
               </Tab>
             </Tabs>
-        </div>
-
-       
+          </div>
+        }
     </div>
   );
 }

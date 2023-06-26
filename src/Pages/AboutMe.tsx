@@ -1,4 +1,6 @@
 
+import { ReactNode } from "react";
+
 import './Styles/AboutMe.scss';
 import selfie from '../Assets/latest-front-photo.jpg';
 import yt_img from '../Assets/youtube.png';
@@ -6,7 +8,11 @@ import li_img from '../Assets/LinkedIn.png';
 import gh_img from '../Assets/github.png';
 import email_img from '../Assets/email.png';
 
-function AboutMe() {
+type BasicProps = {
+  portfolioType: string;
+}
+
+function AboutMe({ portfolioType } : BasicProps){
 
   return (
     <div className="AboutMe">

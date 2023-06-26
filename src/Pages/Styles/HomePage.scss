@@ -40,6 +40,10 @@ html, body {
 	align-self: center;
 	text-align: right;
 	flex: 1;
+	
+	h3 {
+		text-transform: capitalize;
+	}
 
 	p {
 		color: $color-four;

@@ -6,6 +6,8 @@ import gamedevImage from '../Assets/gamedev-collage2.png';
 import soenImage from '../Assets/soen-collage.png';
 import { Link } from 'react-router-dom';
 
+
+
 function Intro() {
 
   var [bgImageClass1, setBgImageClass1] = useState("imgFadeOut")

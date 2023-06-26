@@ -21,7 +21,11 @@ type Project = {
   engine: string
 }
 
-function Projects() {
+type BasicProps = {
+  portfolioType: string;
+}
+
+function Projects({ portfolioType } : BasicProps) {
 
   const [show, setShow] = useState(false);
   const emptyProject : Project = {

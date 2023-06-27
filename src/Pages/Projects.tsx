@@ -52,7 +52,7 @@ function Projects({ portfolioType } : BasicProps) {
       <div className='projects-main-div'>
         <div id="indie-projects" className='projects-container'>
           <div className='experience-paragraph'>
-              <h4>I began making games as a hobby in 2014, then moved on to making more serious games around 2016. Here are all the finished games I've ever made since 2016.</h4>
+              <h4>Here are all the finished games I've ever made since 2016.</h4>
               <h5>These include freelance indie game projects, university projects, game jam projects as well as my own personal projects.</h5>
           </div>
 

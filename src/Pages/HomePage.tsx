@@ -1,6 +1,6 @@
 
 import './Styles/HomePage.scss';
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, RefObject, useMemo } from "react";
 import { useLocation, useMatch, useParams } from "react-router-dom";
 
 import logoNameImage from '../Assets/logo-name.png';
@@ -11,10 +11,38 @@ import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
 
+export function useOnScreen(ref: RefObject<HTMLElement>) {
+
+  const [isIntersecting, setIntersecting] = useState(false)
+
+  const observer = useMemo(() => new IntersectionObserver(
+    ([entry]) => setIntersecting(entry.isIntersecting)
+  ), [ref])
+
+
+  useEffect(() => {
+    if(ref.current !== null)
+      observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [])
+
+  return isIntersecting
+}
+
 function HomePage() {
 
   const { portfolioType } = useParams()
   var [ pType ] = useState(portfolioType)
+
+  const ref = useRef<HTMLDivElement>(null)
+  const isVisible = useOnScreen(ref)
+
+  const ref2 = useRef<HTMLDivElement>(null)
+  const isVisible2 = useOnScreen(ref2)
+
+  const ref3 = useRef<HTMLDivElement>(null)
+  const isVisible3 = useOnScreen(ref3)
+  
 
   function portfolioTitle() {
     var cleanString = pType?.replace("-", " ")
@@ -27,29 +55,29 @@ function HomePage() {
             <img src={logoNameImage} alt="name-logo" className="header-logo-name"/>
 
             <div className="header-portfolio-type">
-              <h3>{portfolioTitle()} Portfolio</h3>
+              <div>
+              <h6>{portfolioTitle()} Portfolio</h6>
               <p>Website made by me :)</p>
+              </div>
             </div>
         </div>
 
         {
           pType != null &&
           <div className="body">
-            <Tabs
-              defaultActiveKey="about-me"
-              className="tabs"
-              justify
-            >
-              <Tab eventKey="about-me" title="About Me">
-                  <AboutMe portfolioType={pType}/>
-              </Tab>
-              <Tab eventKey="projects" title="Projects & Experience">
-                  <Projects portfolioType={pType}/>
-              </Tab>
-              <Tab eventKey="skills" title="Skills">
-                  <Skills portfolioType={pType}/>
-              </Tab>
-            </Tabs>
+            <div className="sections-container">
+              <div ref={ref} className={`section ${isVisible ? 'is-visible' : ''}`}>
+                <AboutMe portfolioType={pType}/>
+              </div>
+
+              <div ref={ref2} className={`section ${isVisible2 ? 'is-visible' : ''}`}>
+                <Projects portfolioType={pType}/>
+              </div>
+
+              <div ref={ref3} className={`section ${isVisible3 ? 'is-visible' : ''}`}>
+                <Skills portfolioType={pType}/>
+              </div>
+            </div>
           </div>
         }
     </div>

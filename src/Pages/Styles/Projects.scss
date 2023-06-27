@@ -7,9 +7,7 @@
 	align-items: stretch;
 	height: 100%;
 	width: 100%;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 700px;
+	padding-bottom: 100px;
 }
 
 .projects-main-div {
@@ -24,40 +22,89 @@ hr {
 
 .experience-paragraph {
 	text-align: center;
-	padding: 10px;
+	padding: 25px;
 	color: $color-four;
 	width: 100%;
 }
-.projects-container {
-	width: 100%;
-	justify-content: center;
-	display: inline-flex;
-	flex-wrap: wrap;
-	gap: 30px;
 
-	img {
-		animation: project-highlight linear;
-		animation-iteration-count: 1;
-		animation-duration: 0.25s;
-		animation-fill-mode: both;
-		animation-direction: reverse;
+@media only screen and (min-width: 601px) {
+
+	.projects-container {
+		width: 100%;
+		justify-content: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	
+		img {
+			animation: project-highlight linear;
+			animation-iteration-count: 1;
+			animation-duration: 0.25s;
+			animation-fill-mode: both;
+			animation-direction: reverse;
+		}
+	
+		img:hover {
+			animation: project-highlight linear;
+			animation-iteration-count: 1;
+			animation-duration: 0.25s;
+			animation-fill-mode: both;
+		}
 	}
 
-	img:hover {
-		animation: project-highlight linear;
-		animation-iteration-count: 1;
-		animation-duration: 0.25s;
-		animation-fill-mode: both;
+	.projects-container-inner {
+		width: 100%;
+		justify-content: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.projects-container {
+		padding: 10%;
+		width: 100%;
+		justify-content: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 0px;
+	
+		img {
+			animation: project-highlight linear;
+			animation-iteration-count: 1;
+			animation-duration: 0.25s;
+			animation-fill-mode: both;
+			animation-direction: reverse;
+		}
+	
+		img:hover {
+			animation: project-highlight linear;
+			animation-iteration-count: 1;
+			animation-duration: 0.25s;
+			animation-fill-mode: both;
+		}
+
+		img:active {
+			animation: project-highlight linear;
+			animation-iteration-count: 1;
+			animation-duration: 0.25s;
+			animation-fill-mode: both;
+		}
+	}
+
+	.projects-container-inner {
+		width: 100%;
+		justify-content: center;
+		display: inline-flex;
+		flex-wrap: wrap;
+		gap: 30px;
 	}
 }
 
-.projects-container-inner {
-	width: 100%;
-	justify-content: center;
-	display: inline-flex;
-	flex-wrap: wrap;
-	gap: 30px;
-}
+
+
 
 .project-category {
 	display: flex;
@@ -81,9 +128,10 @@ hr {
 }
 
 .project-modal {
-	width: 85vw;
+	width: 95vw;
 	color: $color-five;
 	max-width: none !important;
+	align-self: center;
 }
 
 .project-modal .modal-content {
@@ -101,9 +149,14 @@ hr {
 .modal-title {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	align-items: center;
 	gap: 10px;
 	width: 100%;
+
+	h2 {
+		flex-basis: 100%;
+	}
 }
 
 .modal-body {

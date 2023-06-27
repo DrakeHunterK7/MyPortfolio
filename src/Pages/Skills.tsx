@@ -30,8 +30,8 @@ function Skills({ portfolioType } : BasicProps) {
               </div>
             </div>
 
-            <div className="skills-category-box skills-category-box-colorA">
-              <div className="skills-category-box-title skills-category-box-colorA">
+            <div className="skills-category-box skills-category-box-simple">
+              <div className="skills-category-box-title skills-category-box-simple">
                 <h4>Game Development Skills</h4>
               </div>
               <div className='skills-box-container'>
@@ -47,8 +47,8 @@ function Skills({ portfolioType } : BasicProps) {
               </div>
             </div>
 
-            <div className="skills-category-box skills-category-box-colorB">
-              <div className="skills-category-box-title skills-category-box-colorB">
+            <div className="skills-category-box skills-category-box-simple">
+              <div className="skills-category-box-title skills-category-box-simple">
                 <h4>Programming Languages</h4>
               </div>
               <div className='skills-box-container'>
@@ -64,8 +64,8 @@ function Skills({ portfolioType } : BasicProps) {
               </div>
             </div>
 
-            <div className="skills-category-box skills-category-box-colorC">
-              <div className="skills-category-box-title skills-category-box-colorC">
+            <div className="skills-category-box skills-category-box-simple">
+              <div className="skills-category-box-title skills-category-box-simple">
                 <h4>Math and Physics Skills</h4>
               </div>
               <div className='skills-box-container'>
@@ -81,8 +81,8 @@ function Skills({ portfolioType } : BasicProps) {
               </div>
             </div>
  
-            <div className="skills-category-box skills-category-box-colorD">
-              <div className="skills-category-box-title skills-category-box-colorD">
+            <div className="skills-category-box skills-category-box-simple">
+              <div className="skills-category-box-title skills-category-box-simple">
                 <h4>Soft Skills</h4>
               </div>
               <div className='skills-box-container'>

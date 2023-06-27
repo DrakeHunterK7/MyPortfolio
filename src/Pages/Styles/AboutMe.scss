@@ -1,84 +1,195 @@
 @import "../../Styles/variables.scss";
 @import "../../Styles/mixins.scss";
 
-.AboutMe {
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	display: flex;
-	align-items: stretch;
-	height: 100%;
+@media only screen and (max-width: 1024px) {
+
+	.AboutMe {
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 10px;
+		margin-top: 50px;
+		
+		ul {
+			list-style: none;
+		}
+	}
+
+	.about-me-image {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: $color-three;
+	
+		img {
+			width: 200px;
+			border: 10px dashed #555;
+			border-image-slice: 1;
+			border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+			border-image: linear-gradient(var(--angle), $color-one, $color-three) 1;
+			animation: rotate 2.5s linear infinite;
+		  }
+		  margin-bottom: 2%;
+	}
+
+	.contact-info{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	
+	
+	.logos {
 	width: 100%;
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 700px;
-}
-
-.about-me-image {
-
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	gap: 10px;
 	align-items: center;
-	color: $color-three;
+	}
 
-	img {
-		width: 200px;
-		border: 10px dashed #555;
-		border-image-slice: 1;
-		border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
-		border-image: linear-gradient(var(--angle), $color-one, $color-three) 1;
-		animation: rotate 2.5s linear infinite;
-	  }
-	  margin-bottom: 2%;
+	.important-link-box {
+		img {
+			width: 20vw;
+			max-width: 100px;
+		}
+	}
+
+	.personal-info {
+		width: 100%;
+		font-size: auto;
+		text-transform: capitalize;
+	}
+
+	.information-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	
+		h3, h4, h5 {
+			margin-left: 3px;
+			color: $color-three;
+		}
+	
+		p {
+			margin-left: 5px;
+			color: $color-four;
+		}
+	}
+
+	.personal-info-box {
+		text-align: center;
+		width: 100%;
+		hr {
+			color: $color-five;
+		}
+		padding: 1%;
+		height: 100%;
+	}
+
 }
 
-.contact-info{
-	display: flex;
-	flex-direction: row;
-}
 
-.logos {
+
+@media only screen and (min-width: 1025px) {
+
+	.AboutMe {
+		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-bottom: 300px;
+		margin-top: 50px;
+	}
+
+	.about-me-image {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		color: $color-three;
+	
+		img {
+			width: 200px;
+			border: 10px dashed #555;
+			border-image-slice: 1;
+			border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+			border-image: linear-gradient(var(--angle), $color-one, $color-three) 1;
+			animation: rotate 2.5s linear infinite;
+			margin-right: 2%;
+		  }
+		  margin-bottom: 2%;
+		  
+	}
+
+	.contact-info{
+		display: flex;
+		flex-direction: row;
+	}
+	
+	
+	.logos {
 	width: 70%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-
-}
-
-.personal-info {
-	margin-left: 15px;
-	font-size: auto;
-}
-
-.information-box {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-
-	h3, h4, h5 {
-		margin-left: 3px;
-		color: $color-three;
 	}
 
-	li {
-		margin-left: 5px;
-		color: $color-four;
+	.important-link-box {
+		img {
+			width: 100px;
+			max-width: 75px;
+		}
 	}
+
+	.personal-info {
+		font-size: auto;
+		text-transform: capitalize;
+	}
+
+	.information-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	
+		h3, h4, h5 {
+			color: $color-three;
+		}
+	
+		p {
+			color: $color-four;
+		}
+	}
+
+	.personal-info-box {
+		max-width: 35%;
+		width: 100%;
+		hr {
+			color: $color-five;
+		}
+		padding: 1%;
+		height: 100%;
+	}
+
 }
+
+
+
+
+
 
 .information-box-info {
 	margin-left: 5px;
 }
 
-.personal-info-box {
 
-	hr {
-		color: $color-five;
-	}
-	padding: 1%;
-
-	max-width: 50%;
-	height: 100%;
-}
 
 .bio {
 	padding: 1%;

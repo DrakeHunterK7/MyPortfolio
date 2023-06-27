@@ -37,11 +37,12 @@ html, body {
 	align-self: center;
 }
 .header-portfolio-type {
+	margin-top: 15px;
 	align-self: center;
 	text-align: right;
 	flex: 1;
 	
-	h3 {
+	h6 {
 		text-transform: capitalize;
 	}
 
@@ -50,7 +51,25 @@ html, body {
 	}
 }
 
+.sections-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.section {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.6s ease-out;
+	will-change: opacity, visibility;
+}
+
+.section.is-visible{
+	opacity: 1;
+	visibility: visible;
+}
+
 .header {
+	font-size: smaller;
 	background:
 		linear-gradient($color-one, transparent),
 		linear-gradient(to top left, $color-one, transparent),
@@ -65,22 +84,20 @@ html, body {
 	vertical-align: middle;
 	flex: 1, 1, auto;
 
-	h1, h3 {
+	h1, h6 {
 		animation: change-color ease;
 		animation-iteration-count: infinite;
 		animation-duration: 1s;
 		animation-fill-mode: both;
 	}
-	h3 {
+	h6 {
 		color: $color-four;
 	}
 }
 
 .body {
-	min-height:0;
-	height: 100%;
-	width: 100%;
-	flex-grow: 1;
+	overflow-y: scroll;
+	scrollbar-width: none;
 }
 
 .footer{
@@ -110,7 +127,7 @@ html, body {
 }
 
 ::-webkit-scrollbar{
-	background-color: transparent;
+	display: none;
 }
 
 ::-webkit-scrollbar-button {

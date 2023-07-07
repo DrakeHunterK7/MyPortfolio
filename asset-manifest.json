@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.5d620feb.css",
-    "main.js": "/MyPortfolio/static/js/main.9d9ac400.js",
+    "main.css": "/MyPortfolio/static/css/main.4908e96e.css",
+    "main.js": "/MyPortfolio/static/js/main.d57e440a.js",
     "static/js/787.28cb0dcd.chunk.js": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js",
-    "static/media/portfolioskybox.png": "/MyPortfolio/static/media/portfolioskybox.daafff775d195009704c.png",
-    "static/media/latest-front-photo.jpg": "/MyPortfolio/static/media/latest-front-photo.455cd81c215280b12e68.jpg",
+    "static/media/GameProgrammerShowcase.mp4": "/MyPortfolio/static/media/GameProgrammerShowcase.28abba5263c7b38889c2.mp4",
     "static/media/space_conquest.png": "/MyPortfolio/static/media/space_conquest.f7882c7a87bc8beb3494.png",
     "static/media/captured_ocean_commotion.png": "/MyPortfolio/static/media/captured_ocean_commotion.ca50151c6c528f6fe647.png",
     "static/media/parcore.png": "/MyPortfolio/static/media/parcore.bc5011b320e89885cef6.png",
     "static/media/house-carrigan.png": "/MyPortfolio/static/media/house-carrigan.a18a5332f06c6e7d10f5.png",
     "static/media/project-labyrinth.png": "/MyPortfolio/static/media/project-labyrinth.d7d9b29d51c41a472782.png",
-    "static/media/logo-name.png": "/MyPortfolio/static/media/logo-name.8fc08dd8bff1b518b350.png",
     "static/media/Snowfolie.jpg": "/MyPortfolio/static/media/Snowfolie.8f351de3eb18b4dd7d19.jpg",
+    "static/media/logo-name.png": "/MyPortfolio/static/media/logo-name.52cca36d3bff056e622b.png",
+    "static/media/Anas Peerzada Resume.pdf": "/MyPortfolio/static/media/Anas Peerzada Resume.7b99c227d037c1330013.pdf",
     "static/media/chemical-chimpet.png": "/MyPortfolio/static/media/chemical-chimpet.5889fd52e396b33291b7.png",
     "static/media/pizza_car_man.png": "/MyPortfolio/static/media/pizza_car_man.7909ce7c40481a7c0e44.png",
     "static/media/UnLeash.png": "/MyPortfolio/static/media/UnLeash.e6ee851c38e539114e3f.png",
     "static/media/github.png": "/MyPortfolio/static/media/github.6149aa5ccbc036755594.png",
     "static/media/LinkedIn.png": "/MyPortfolio/static/media/LinkedIn.a95afc06831647f5fca2.png",
     "index.html": "/MyPortfolio/index.html",
-    "main.5d620feb.css.map": "/MyPortfolio/static/css/main.5d620feb.css.map",
-    "main.9d9ac400.js.map": "/MyPortfolio/static/js/main.9d9ac400.js.map",
+    "main.4908e96e.css.map": "/MyPortfolio/static/css/main.4908e96e.css.map",
+    "main.d57e440a.js.map": "/MyPortfolio/static/js/main.d57e440a.js.map",
     "787.28cb0dcd.chunk.js.map": "/MyPortfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d620feb.css",
-    "static/js/main.9d9ac400.js"
+    "static/css/main.4908e96e.css",
+    "static/js/main.d57e440a.js"
   ]
 }

@@ -2,11 +2,20 @@
 import './Styles/HomePage.scss';
 import { useEffect, useState, useRef, RefObject, useMemo } from "react";
 import { useLocation, useMatch, useParams } from "react-router-dom";
+import ReactPlayer from 'react-player'
 
 import logoNameImage from '../Assets/logo-name.png';
+import resume from '../Assets/Documents/Anas Peerzada Resume.pdf';
+import showcase from '../Assets/Videos/GameProgrammerShowcase.mp4';
+import yt_img from '../Assets/youtube.png';
+import li_img from '../Assets/LinkedIn.png';
+import gh_img from '../Assets/github.png';
+import email_img from '../Assets/email.png';
 
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Container } from 'react-bootstrap';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
 import Skills from './Skills';
@@ -31,6 +40,8 @@ export function useOnScreen(ref: RefObject<HTMLElement>) {
 
 function HomePage() {
 
+  const myRef = useRef<HTMLDivElement>(null)
+
   const { portfolioType } = useParams()
   var [ pType ] = useState(portfolioType)
 
@@ -42,30 +53,65 @@ function HomePage() {
 
   const ref3 = useRef<HTMLDivElement>(null)
   const isVisible3 = useOnScreen(ref3)
+
+  const ref4 = useRef<HTMLDivElement>(null)
+  const isVisible4 = useOnScreen(ref4)
+
+  const executeScroll1 = () => {
+    if(ref.current !== null)
+      ref.current.scrollIntoView() 
+  }
+
+  const executeScroll2 = () => {
+    if(ref2.current !== null)
+      ref2.current.scrollIntoView() 
+  }
+
+  const executeScroll3 = () => {
+    if(ref3.current !== null)
+      ref3.current.scrollIntoView() 
+  }
+
+  const executeScroll4 = () => {
+    if(ref4.current !== null)
+      ref4.current.scrollIntoView() 
+  }
   
 
-  function portfolioTitle() {
-    var cleanString = pType?.replace("-", " ")
-    return cleanString
-  }
+  // function portfolioTitle() {
+  //   var cleanString = pType?.replace("-", " ")
+  //   return cleanString
+  // }
 
   return (
     <div className="HomePage">
-        <div className="header">
-            <img src={logoNameImage} alt="name-logo" className="header-logo-name"/>
-
-            <div className="header-portfolio-type">
-              <div>
-              <h6>{portfolioTitle()} Portfolio</h6>
-              <p>Website made by me :)</p>
-              </div>
-            </div>
+        <div className="header" id='top'>
+        <Navbar expand="lg" className="bg-body-tertiary">
+          <Container>
+            <Navbar.Brand><Nav.Link href="" onClick={executeScroll4}><img src={logoNameImage} alt="name-logo" width="250px"/></Nav.Link></Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="" onClick={executeScroll1}><p>About Me</p></Nav.Link>
+                <Nav.Link href="" onClick={executeScroll2}><p>Projects</p></Nav.Link>
+                <Nav.Link href={resume} target="_blank"><p>Resume</p></Nav.Link>
+                <Nav.Link href="" onClick={executeScroll3}><p>Contact</p></Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+    </Navbar>
         </div>
 
         {
           pType != null &&
           <div className="body">
             <div className="sections-container">
+            <div ref={ref4} className="section-visible">
+              <video autoPlay muted loop playsInline className="video">
+                <source src={showcase} type="video/mp4" />
+              </video>
+            </div>
+
               <div ref={ref} className={`section ${isVisible ? 'is-visible' : ''}`}>
                 <AboutMe portfolioType={pType}/>
               </div>
@@ -75,7 +121,33 @@ function HomePage() {
               </div>
 
               <div ref={ref3} className={`section ${isVisible3 ? 'is-visible' : ''}`}>
-                <Skills portfolioType={pType}/>
+                <div className="footer">
+                  <div><p>Feel free to reach out to me at my email <a href="mailto:apeerzada987@gmail.com">apeerzada987@gmail.com.</a> Here are other ways you could reach me and/or check my work out:</p></div>
+
+                  <div className="contact-info">
+                    <div className="logos">
+                      <div className="important-link-box">
+                      <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
+                        <img alt="it me"src={gh_img}/>
+                      </a>
+                      </div>
+
+                      <div className="important-link-box">
+                      <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
+                        <img alt="it me" src={li_img}/>
+                      </a>
+                      </div>
+
+                      <div className="important-link-box">
+                      <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
+                        <img alt="it me" src={yt_img}/>
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div><p> Copyright © 2023 by Anas Peerzada | All images, logos and names are used with permission</p></div>
+                </div>
               </div>
             </div>
           </div>

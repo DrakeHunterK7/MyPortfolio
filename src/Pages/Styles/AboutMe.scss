@@ -61,19 +61,25 @@
 	}
 
 	.personal-info {
+		margin-top: 10px;
 		width: 100%;
 		font-size: auto;
 		text-transform: capitalize;
+		color: $color-four;
 	}
 
 	.information-box {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+
+		h3 {
+			text-shadow: 2px 2px $color-three;
+		}
 	
 		h3, h4, h5 {
 			margin-left: 3px;
-			color: $color-three;
+			color: $color-four;
 		}
 	
 		p {
@@ -83,6 +89,7 @@
 	}
 
 	.personal-info-box {
+		
 		text-align: center;
 		width: 100%;
 		hr {
@@ -90,6 +97,19 @@
 		}
 		padding: 1%;
 		height: 100%;
+	}
+
+	.bio-paragraph {
+		h2{
+			color: $color-four;
+			text-shadow: 2px 2px $color-three;
+			text-align: center;
+		}
+	
+		p {
+			text-align: justify;
+			color: $color-four;
+		}
 	}
 
 }
@@ -100,11 +120,6 @@
 
 	.AboutMe {
 		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-		padding-left: 25px;
-		padding-right: 25px;
 		padding-bottom: 300px;
 		margin-top: 50px;
 	}
@@ -152,6 +167,8 @@
 	.personal-info {
 		font-size: auto;
 		text-transform: capitalize;
+		color: $color-four;
+		text-shadow: 2px 2px $color-three;
 	}
 
 	.information-box {
@@ -159,8 +176,12 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 	
+		h3 {
+			text-shadow: 2px 2px $color-three;
+		}
+
 		h3, h4, h5 {
-			color: $color-three;
+			color: $color-four;
 		}
 	
 		p {
@@ -176,6 +197,27 @@
 		}
 		padding: 1%;
 		height: 100%;
+	}
+
+	.bio-paragraph {
+		width: 50%;
+		margin: auto;
+		
+		h2{
+			color: $color-four;
+			text-shadow: 2px 2px $color-three;
+			text-align: center;
+		}
+	
+		p {
+			text-align: justify;
+			color: $color-four;
+			text-align: center;
+		}
+	}
+
+	.bio {
+		
 	}
 
 }
@@ -196,16 +238,7 @@
 	flex: 1;
 }
 
-.bio-paragraph {
-	h2{
-		color: $color-three;
-	}
 
-	p {
-		text-align: justify;
-		color: $color-four;
-	}
-}
 
 
 @supports (background: paint(worklet)) {

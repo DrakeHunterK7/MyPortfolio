@@ -7,17 +7,14 @@
         "video_link":"https://www.youtube.com/embed/qqIz1jFAxAM",
         "download_link": "https://home-sick.itch.io/captured-ocean-commotion-demo",
         "github_link": "none",
-        "description": "Captured! Ocean Commotion is a project I did during my freelance programming career and, by far, the most ambitious project I have ever done. I was the only programmer on this project, alongside the creative director, Ian Mazgelis, who did the game design. The art was done by other freelance artists. A demo for the game is available, while the full game will start development in the near future.",
+        "description": "Captured! Ocean Commotion is an Indie project made in Unreal Engine 4 I did during my freelance programming career and, by far, the most ambitious project I have ever done. I was the only programmer on this project, alongside the creative director, Ian Mazgelis, who did the game design. The art was done by other freelance artists. A demo for the game is available, while the full game will start development in the near future.",
         "responsibilities": [
-            "AI Programming",
-            "Animation Programming",
-            "Gameplay Programming",
-            "Level Scripting",
-            "UI Design and Programming",
-            "Art programming",
-            "Technical programming",
-            "Optimization",
-            "Basically everything, since I was the only programmer on this project"
+            "Programming game mechanics and elements using Unreal Blueprints",
+            "Programming the animations for several AI characters as well as the player character using the built-in animation system",
+            "Scripting all events in the game level",
+            "Programming the UI using the built-in Unreal Widget system",
+            "Programmed some underwater shaders using the built-in Material editor",
+            "Created a cutscene using the built-in Sequence editor"
         ],
         "challenges": [
             "Creating a gadget system that relied on the precision of the analog stick on a controller",
@@ -25,7 +22,6 @@
             "Creating, scripting and optimizing levels with the required scale for the gameplay to work properly",
             "Optimizing the game to run at 60fps on most hardware specifications",
             "Scripting a huge number of events and moving pieces in the level and getting them all to work together",
-            "Cutscenes",
             "Creating the Shell Hockey minigame as seen in the video above, everything from design, prototype to complete implementation"
         ],
         "learnings": [

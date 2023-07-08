@@ -7,7 +7,6 @@
 	align-items: stretch;
 	height: 100%;
 	width: 100%;
-	padding-left: 25px;
 	padding-bottom: 100px;
 }
 
@@ -22,27 +21,45 @@
 	justify-content: center;
 }
 
-@media only screen and (min-width: 851px) {
+@media only screen and (min-width: 1080px) {
 	.skills-container {
 		width: 100%;
 		justify-content: center;
 		display: flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		gap: 10px;
 		padding: 10%;
 	}
+
+	.skills-category-box {
+		background-image:
+				linear-gradient(to right, $color-three, adjust-hue($color-three, 20%));
+		border-radius: 15px;
+		padding: 15px;
+		box-shadow: 5px 5px $color-two;
+		margin-bottom: 50px;
+		width: 400px;
+	}
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1079px) {
 	.skills-container {
 		width: 100%;
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		gap: 0px;
-		padding: 20%;
+		padding: 5%;
+	}
+
+	.skills-category-box {
+		background-image:
+				linear-gradient(to right, $color-three, adjust-hue($color-three, 20%));
+		border-radius: 15px;
+		padding: 15px;
+		box-shadow: 5px 5px $color-two;
+		margin-bottom: 50px;
 	}
 }
 
@@ -60,23 +77,16 @@
 	gap: 30px;
 }
 
-.skills-category-box {
-	background-image:
-        	linear-gradient(to right, $color-three, adjust-hue($color-three, 20%));
-	border-radius: 15px;
-	padding: 15px;
-	box-shadow: 5px 5px $color-two;
-	margin-bottom: 50px;
-}
+
 
 .skills-category-box-simple {
 	background-image:
-        	linear-gradient(to right, $color-three, adjust-hue($color-three, 20%)) !important;
+        	linear-gradient(to right, adjust-hue($color-two, 40%), adjust-hue($color-two, 60%)) !important;
 }
 
 .skills-category-box-colorA {
 	background-image:
-		linear-gradient(to right, adjust-hue($color-three, 20%), adjust-hue($color-three, 40%)) !important;
+		linear-gradient(to right, adjust-hue($color-two, 20%), adjust-hue($color-two, 40%)) !important;
 }
 
 .skills-category-box-colorB {
@@ -110,12 +120,12 @@
 
 .skill-badge-background {
 	background-image:
-		linear-gradient(to right, adjust-hue($color-three, 40%), adjust-hue($color-three, 60%)) !important;
+		linear-gradient(to right, adjust-hue($color-two, 40%), adjust-hue($color-two, 60%)) !important;
 }
 
 .skill-badge {
 	color: $color-four;
-	font-size:small;
+	font-size:larger;
 	margin: 5px;
 	box-shadow: 5px 5px $color-one;
 }

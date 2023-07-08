@@ -20,19 +20,13 @@ function AboutMe({ portfolioType } : BasicProps){
   }
 
 
+
+
   return (
     <div className="AboutMe">
-      <div className="personal-info-box">
-        <div className="about-me-image">
-          <img className="selfie-image" alt="it me" src={selfie}/>
+      {/* <div className="personal-info-box"> */}
 
-          <div className="personal-info">
-              <h3>Anas Peerzada</h3>
-              <h4> {portfolioTitle()} </h4>
-          </div>
-        </div>
-
-        <div className="contact-info">
+        {/* <div className="contact-info">
           <div className="logos">
 
           <div className="important-link-box">
@@ -59,9 +53,9 @@ function AboutMe({ portfolioType } : BasicProps){
           </a>
           </div>
           </div>
-        </div>
+        </div> */}
 
-        <hr/>
+        {/* <hr/>
 
         <div className="information-box">
             <h3><b>Education</b></h3>
@@ -71,7 +65,7 @@ function AboutMe({ portfolioType } : BasicProps){
               <h5>January 2017 - April 2023</h5>
               <p>Bachelor of Engineering (BEng) in Software Engineering</p>
               <p>CGPA: 3.3</p>
-              <p>Took Computer Games as an option with Software Engineering</p>
+              <p>Took Computer Games as an option with Software Engineering</p> */}
 {/* 
             <h4>International Indian School, Jeddah, Saudi Arabia</h4>
               <h5>January 2012 - April 2016</h5>
@@ -80,25 +74,25 @@ function AboutMe({ portfolioType } : BasicProps){
                 <li>Studied science and software</li>
               </ul> */}
 
-            </div>
-        </div>
+            {/* </div>
+        </div> */}
 
-        <hr/>
-
-      </div>
+      {/* </div> */}
 
       <div className="bio">
-
         <div className="bio-paragraph">
           <h2>A little about me</h2>
-          <p>Ever since I picked up Unreal Engine 4 in 2014, I've been making games as a hobby. That hobby turned into a professional thing when I started making games professionally in a freelance capacity.</p>
+          <p>I grew up in Saudi Arabia and later moved to Canada for my higher education. Despite being Indian by nationality, Saudi Arabia has been my home throughout my childhood and teenage years.</p>
 
-          <p>Ever since finishing The Last of Us in 2013, I decided to make games for a living, and would leave no stone unturned in creating similar experiences. As such, I am an aspiring game programmer interested in working on transformational single-player experiences with a focus on narrative and gameplay</p>
+          <p>My passion for science and programming ignited at a young age. I found joy in writing algorithms and using my computer to create innovative solutions. However, as I entered my teenage years, I began to explore my artistic side and wanted to express my talents in more creative ways.</p>
+
+          <p>Gaming had always been a significant part of my life, but it wasn't until I completed The Last of Us in 2013 that I realized the profound impact it had on me. This experience solidified my decision to pursue a career in game development. I wanted to craft immersive experiences that could evoke similar emotions. This led me to discover Unreal Engine 4, where I could utilize my programming skills to bring my game ideas to life.</p>
+
+          <p>Since then, game development has evolved from a hobby to a professional pursuit. In 2019, I started working as a freelance game developer, channeling my efforts into creating transformative single-player experiences. I strive to push boundaries, focusing on storytelling and gameplay to create games that have a lasting impact on players' lives, just as The Last of Us did for me. My every endeavor is dedicated to enhancing my ability to achieve this goal.</p>
+
+          <p>For as long as I can envision, making games and collaborating with other forms of media is the path I wholeheartedly see myself following.</p>
         </div>
       </div>
-
-      <hr/>
-
     </div>
   );
 }

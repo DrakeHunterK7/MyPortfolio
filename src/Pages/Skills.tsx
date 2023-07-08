@@ -13,7 +13,7 @@ function Skills({ portfolioType } : BasicProps) {
     <div className="Skills">
       <div className='skills-main-div'>
         <div className='skills-container'>
-            <div className="skills-category-box">
+            <div className="skills-category-box skills-category-box-simple">
               <div className="skills-category-box-title skills-category-box-simple">
                 <h4>Software Engineering Skills</h4>
               </div>

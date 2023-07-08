@@ -53,7 +53,7 @@ hr {
 	}
 
 	.projects-container-inner {
-		width: 100%;
+		width: 70%;
 		justify-content: center;
 		display: inline-flex;
 		flex-wrap: wrap;
@@ -131,7 +131,6 @@ hr {
 	width: 95vw;
 	color: $color-five;
 	max-width: none !important;
-	align-self: center;
 }
 
 .project-modal .modal-content {

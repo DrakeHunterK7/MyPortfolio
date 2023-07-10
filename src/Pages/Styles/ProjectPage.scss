@@ -1,0 +1,346 @@
+@import "../../Styles/variables.scss";
+@import "../../Styles/mixins.scss";
+
+.ProjectPages {
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(to bottom, darken(adjust-hue($color-two, 10%), 10%), darken(adjust-hue($color-two, 60%), 10%)) !important;
+	height: 100%;
+	overflow: hidden;
+}
+
+.project-page-body{
+	height: 100%;
+	overflow-y: scroll;
+}
+
+@media only screen and (min-width: 1080px) 
+{
+	.project-header {
+		font-size: smaller;
+		background:
+			linear-gradient($color-one, transparent),
+			linear-gradient(to top left, $color-one, transparent),
+			linear-gradient(to top right, $color-two, transparent);
+		background-blend-mode: screen;
+		padding-left: 1%;
+		padding-right: 1%;
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		vertical-align: middle;
+		flex: 1, 1, auto;
+	
+		h6 {
+			color: $color-four;
+		}
+
+		p {
+			justify-content: center;
+			color: $color-four;
+			font-size: large;
+			padding-top: 25px;
+		}
+	}
+
+	.header-portfolio-type {
+		margin-top: 15px;
+		align-self: center;
+		text-align: right;
+		flex: 1;
+		
+		p {
+			text-transform: capitalize;
+		}
+	
+		p {
+			color: $color-four;
+		}
+	}
+
+	.projectpages-description{
+		margin-top: 25px;
+		padding: 10px;
+		color: $color-four;
+		width: 100%;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		p {
+			text-align: justify;
+			margin-bottom: 50px;
+			max-width: 50%;
+		}
+
+		h3 {
+			text-align: center;
+			font-weight:bold;
+		}
+
+		ul {
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		
+		li {
+			list-style-type: none;
+		}
+
+
+	}
+
+	.projectpages-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+		iframe {
+			aspect-ratio : 1 / 0.565;
+			border-radius: 25px;
+			width: 90%;
+		}
+	}
+
+	.header-logo-name {
+		margin-left: 1%;
+		width: 25%;
+		height: auto;
+		align-self: center;
+	}
+
+	.project-title{
+		padding: 10px;
+		color: $color-four;
+		font-weight: bold;
+		font-size: larger;
+		text-align: center;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+
+		h2 {
+			flex-basis: 100%;
+			font-weight: bold;
+		}
+
+		p {
+			text-align: center;
+			width: 100%;
+		}
+
+	}
+
+	.modal-video-box{
+		max-width: 50%;
+		height: auto;
+	}
+
+	.project-date {
+		padding: 10px;
+		color: $color-four;
+	}
+
+	.projectpages-download-button {
+		color: $color-two;
+		background-color: $color-four;
+		border-radius: 10px;
+		padding: 5px;
+		box-shadow: 2px 2px black;
+		max-width: fit-content;
+		
+		a {
+			text-decoration: none;
+			color: $color-two;
+		}
+	
+	}
+
+	.links {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.tags {
+		padding: 10px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 1079px) 
+{
+	.project-header {
+		font-size: smaller;
+		background:
+			linear-gradient($color-one, transparent),
+			linear-gradient(to top left, $color-one, transparent),
+			linear-gradient(to top right, $color-two, transparent);
+		background-blend-mode: screen;
+		padding-left: 5%;
+		padding-right: 10%;
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		vertical-align: middle;
+		flex: 1, 1, auto;
+
+		p {
+			justify-content: center;
+			color: $color-four;
+			font-size: large;
+			text-align: center;
+		}
+		h6 {
+			color: $color-four;
+		}
+
+		a {
+			margin-top: 10px;
+			align-self: flex-end;
+			max-width: 75px;
+			text-align: center;
+		}
+
+	}
+
+	.header-portfolio-type {
+		margin-top: 15px;
+		align-self: center;
+		text-align: center;
+		flex: 1;
+	
+		p {
+			text-transform: capitalize;
+			color: $color-four;
+		}
+	}
+
+	.header-logo-name {
+		width: inherit;
+		align-self: center;
+	}
+
+	.project-title{
+		padding: 10px;
+		color: $color-four;
+		font-weight: bold;
+		font-size: larger;
+		text-align: center;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+
+		h2 {
+			flex-basis: 100%;
+			font-weight: bold;
+		}
+
+		p {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.projectpages-description{
+		margin-top: 25px;
+		padding: 10px;
+		color: $color-four;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+
+		p {
+			text-align: justify;
+			margin-bottom: 50px;
+			max-width: 90%;
+		}
+
+		h3 {
+			text-align: center;
+			font-weight:bold ;
+		}
+
+		ul {
+			margin-bottom: 50px;
+		}
+		
+
+	}
+
+	.projectpages-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+		iframe {
+			aspect-ratio : 1 / 0.565;
+			border-radius: 25px;
+			width: 90%;
+		}
+	}
+
+	.projectpages-download-button {
+		color: $color-two;
+		background-color: $color-four;
+		border-radius: 10px;
+		padding: 5px;
+		box-shadow: 2px 2px black;
+		max-width: fit-content;
+		
+		a {
+			text-decoration: none;
+			color: $color-two;
+		}
+	}
+	
+
+	.links {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.tags {
+		padding: 10px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.project-date {
+		padding: 10px;
+		color: $color-four;
+	}
+	
+	.modal-iframe-container {
+		width: 100%;
+		text-align: center;
+
+		iframe {
+	
+		}
+	}
+	
+	.modal-video-box{
+		width: 100%;
+		height: auto;
+	}
+}
+
+

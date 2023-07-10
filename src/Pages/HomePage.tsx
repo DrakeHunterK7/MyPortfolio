@@ -10,15 +10,12 @@ import showcase from '../Assets/Videos/GameProgrammerShowcase.mp4';
 import yt_img from '../Assets/youtube.png';
 import li_img from '../Assets/LinkedIn.png';
 import gh_img from '../Assets/github.png';
-import email_img from '../Assets/email.png';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Container } from 'react-bootstrap';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
-import Skills from './Skills';
 
 export function useOnScreen(ref: RefObject<HTMLElement>) {
 
@@ -59,47 +56,48 @@ function HomePage() {
 
   const executeScroll1 = () => {
     if(ref.current !== null)
-      ref.current.scrollIntoView() 
+      ref.current.scrollIntoView()
+      setExpanded(false)
   }
 
   const executeScroll2 = () => {
     if(ref2.current !== null)
-      ref2.current.scrollIntoView() 
+      ref2.current.scrollIntoView()
+      setExpanded(false) 
   }
 
   const executeScroll3 = () => {
     if(ref3.current !== null)
-      ref3.current.scrollIntoView() 
+      ref3.current.scrollIntoView()
+      setExpanded(false) 
   }
 
   const executeScroll4 = () => {
     if(ref4.current !== null)
-      ref4.current.scrollIntoView() 
+      ref4.current.scrollIntoView()
+      setExpanded(false) 
   }
   
-
-  // function portfolioTitle() {
-  //   var cleanString = pType?.replace("-", " ")
-  //   return cleanString
-  // }
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="HomePage">
         <div className="header" id='top'>
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" expanded={expanded}>
           <Container>
-            <Navbar.Brand><Nav.Link href="" onClick={executeScroll4}><img src={logoNameImage} alt="name-logo" width="250px"/></Nav.Link></Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Brand><Nav.Link href={`/#/MyPortfolio/${portfolioType}`}><img src={logoNameImage} alt="name-logo" width="250px"/></Nav.Link></Navbar.Brand>
+            <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
+                <Nav.Link href="" onClick={executeScroll4}><p>Showcase</p></Nav.Link>
                 <Nav.Link href="" onClick={executeScroll1}><p>About Me</p></Nav.Link>
                 <Nav.Link href="" onClick={executeScroll2}><p>Projects</p></Nav.Link>
-                <Nav.Link href={resume} target="_blank"><p>Resume</p></Nav.Link>
                 <Nav.Link href="" onClick={executeScroll3}><p>Contact</p></Nav.Link>
+                <Nav.Link href={resume} target="_blank"><p>Resume</p></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
-    </Navbar>
+        </Navbar>
         </div>
 
         {
@@ -110,6 +108,9 @@ function HomePage() {
               <video autoPlay muted loop playsInline className="video">
                 <source src={showcase} type="video/mp4" />
               </video>
+              <div>
+                <p>A showcase of all my projects</p>
+              </div>
             </div>
 
               <div ref={ref} className={`section ${isVisible ? 'is-visible' : ''}`}>

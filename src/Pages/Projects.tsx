@@ -4,6 +4,7 @@ import { useState } from "react";
 import gameProjects from '../data/GameProjects.json'
 import Modal from 'react-bootstrap/Modal';
 import Badge from 'react-bootstrap/Badge';
+import { Link } from 'react-router-dom';
 
 
 type Project = {
@@ -11,6 +12,7 @@ type Project = {
   type: string
   image_name: string,
   name: string,
+  url_name: string,
   video_link: string,
   download_link: string,
   github_link: string,
@@ -33,6 +35,7 @@ function Projects({ portfolioType } : BasicProps) {
     type: "",
     image_name: "",
     name: "",
+    url_name: "",
     video_link: "",
     download_link: "",
     github_link: "",
@@ -42,10 +45,6 @@ function Projects({ portfolioType } : BasicProps) {
     learnings: [],
     engine: ""
   }
-  let [selectedProject, setSelectedProject] = useState(emptyProject);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <div className="Projects">
@@ -60,13 +59,12 @@ function Projects({ portfolioType } : BasicProps) {
           {
             gameProjects.map(project => {
               return (
-                <div className="project-box" onClick={event => {
-                  handleShow();
-                  setSelectedProject(project);
-                  }}>
-                  <img alt={project.type} width={150} src={require("../Assets/Game Projects/Game Project Logos/"+project.image_name)}/>
-                  <p>{project.name}</p>
-                </div>
+                <Link to={`/${portfolioType}/${project.url_name}`}>
+                  <div className="project-box">
+                    <img alt={project.type} width={150} src={require("../Assets/Game Projects/Game Project Logos/"+project.image_name)}/>
+                    <p>{project.name}</p>
+                  </div>
+                </Link>
               )
             })
           }
@@ -74,7 +72,7 @@ function Projects({ portfolioType } : BasicProps) {
         </div>
       </div>
 
-      <Modal dialogClassName="project-modal" show={show} onHide={handleClose} centered>
+      {/* <Modal dialogClassName="project-modal" show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>
             <div className='modal-title'>
@@ -147,7 +145,7 @@ function Projects({ portfolioType } : BasicProps) {
           </div>
           
         </Modal.Body>
-      </Modal>
+      </Modal> */}
 
     </div>
   );

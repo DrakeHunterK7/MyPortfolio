@@ -39,10 +39,7 @@
 			justify-content: center;
 			color: $color-four;
 			font-size: large;
-		}
-
-		a {
-			padding-top: 10%;
+			padding-top: 25px;
 		}
 	}
 
@@ -66,6 +63,27 @@
 		width: 25%;
 		height: auto;
 		align-self: center;
+	}
+
+	.section-visible {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+		width: 100%;
+		max-width: 1100px;
+		margin-bottom: 100px;
+		text-align: center;
+		padding: 1%;
+		background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
+		border-radius: 2%;
+		p {
+			color: $color-four;
+			font-size: larger;
+		}
+	
+		video {
+			border-radius: 1%;
+		}
 	}
 }
 
@@ -95,6 +113,14 @@
 		h6 {
 			color: $color-four;
 		}
+
+		a {
+			margin-top: 10px;
+			align-self: flex-end;
+			max-width: 75px;
+			text-align: center;
+		}
+
 	}
 
 	.header-portfolio-type {
@@ -112,6 +138,26 @@
 	.header-logo-name {
 		width: inherit;
 		align-self: center;
+	}
+
+	.section-visible {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		max-width: 1100px;
+		margin-bottom: 100px;
+		text-align: center;
+		background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
+		
+		p {
+			color: $color-four;
+			font-size: larger;
+			font-style: italic;
+		}
+	
+		video {
+			border-radius: 1%;
+		}
 	}
 }
 
@@ -150,20 +196,10 @@ html, body {
 	will-change: opacity, visibility;
 }
 
-.section-visible {
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	max-width: 1100px;
-	margin-bottom: 250px;
-}
-
 .section.is-visible{
 	opacity: 1;
 	visibility: visible;
 }
-
-
 
 .body {
 	scroll-behavior: smooth;

@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom"
 import HomePage from 'Pages/HomePage';
+import ProjectPage from 'Pages/ProjectPage'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,8 +14,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <HashRouter>
     <Routes>
-      <Route index path="/MyPortfolio/:portfolioType" element={<HomePage />} />
-      <Route path="*" element= {<Navigate to='/MyPortfolio/game-programmer' replace />} />
+      <Route index path="/:portfolioType" element={<HomePage />} />
+      <Route index path="/:portfolioType/:projectName" element={<ProjectPage />}/>
+      <Route path="*" element= {<Navigate to='/game-programmer' replace />} />
     </Routes>
   </HashRouter>
 );

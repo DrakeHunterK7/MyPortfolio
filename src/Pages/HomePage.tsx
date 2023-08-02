@@ -84,7 +84,7 @@ function HomePage() {
         <div className="header" id='top'>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" expanded={expanded}>
           <Container>
-            <Navbar.Brand><Nav.Link href={`/#/MyPortfolio/${portfolioType}`}><h1 className='logo-text'>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
+            <Navbar.Brand><Nav.Link href={`#/${portfolioType}`}><h1>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
             <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">

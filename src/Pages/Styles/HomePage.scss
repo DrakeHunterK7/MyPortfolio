@@ -114,6 +114,24 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.footer{
+		width: 100%;
+		background-color: darken(adjust-hue($color-three, 10%), 10%); 
+			background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
+		color: $color-four;
+		padding: 1%;
+		text-align: center;
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+		p {
+			font-size: large !important;
+			height: fit-content !important;
+		}
+	}
 }
 
 @media only screen and (max-width: 991px) 
@@ -212,6 +230,24 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.footer{
+		width: 100%;
+		background-color: darken(adjust-hue($color-three, 10%), 10%); 
+			background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
+		color: $color-four;
+		padding: 3%;
+		text-align: center;
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	
+		p {
+			font-size: large !important;
+			height: fit-content !important;
+		}
+	}
 }
 
 html, body {
@@ -262,23 +298,7 @@ html, body {
 		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 20%) 0%, darken(adjust-hue($color-three, 30%), 25%) 74%);
 }
 
-.footer{
-	width: 100%;
-	background-color: darken(adjust-hue($color-three, 10%), 10%); 
-		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
-	color: $color-four;
-	padding: 1%;
-	text-align: center;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	p {
-		font-size: large !important;
-		height: fit-content !important;
-	}
-}
 
 
 .tab-content {

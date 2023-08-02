@@ -19,6 +19,10 @@
 
 @media only screen and (min-width: 1080px) 
 {
+	.navbar-brand {
+		margin-top: -10px;
+	}
+	
 	.project-header {
 		font-size: smaller;
 		background-color: darken(adjust-hue($color-three, 10%), 25%); 
@@ -186,6 +190,10 @@
 
 @media only screen and (max-width: 1079px) 
 {
+	.navbar-brand {
+		margin-top: -10px;
+	}
+
 	.project-header {
 		font-size: smaller;
 		background-color: darken(adjust-hue($color-three, 10%), 25%); 

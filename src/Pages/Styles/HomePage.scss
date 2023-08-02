@@ -1,5 +1,6 @@
 @import "../../Styles/variables.scss";
 @import "../../Styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 
 :root {
   --angle: 90deg;
@@ -14,14 +15,16 @@
  height: auto;
 }
 
-@media only screen and (min-width: 1080px) 
+@media only screen and (min-width: 992px) 
 {
+	.navbar-brand {
+		margin-top: 10px;
+	}
+
 	.header {
 		font-size: smaller;
-		background:
-			linear-gradient($color-one, transparent),
-			linear-gradient(to top left, $color-one, transparent),
-			linear-gradient(to top right, $color-two, transparent);
+		background-color: darken(adjust-hue($color-three, 10%), 25%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 		background-blend-mode: screen;
 		padding-left: 1%;
 		padding-right: 1%;
@@ -30,6 +33,11 @@
 		flex-direction: row;
 		vertical-align: middle;
 		flex: 1, 1, auto;
+
+		h1 {
+			font-family: 'Underdog', sans-serif;
+			color: $color-five;
+		}
 	
 		h6 {
 			color: $color-four;
@@ -71,10 +79,15 @@
 		margin-top: 25px;
 		width: 100%;
 		max-width: 1100px;
-		margin-bottom: 100px;
+		margin-bottom: 400px;
 		text-align: center;
-		padding: 1%;
-		background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
+		padding-top: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		background-color: darken(adjust-hue($color-three, 10%), 90%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
+		background-blend-mode: screen;
+		// background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
 		border-radius: 2%;
 		p {
 			color: $color-four;
@@ -85,24 +98,47 @@
 			border-radius: 1%;
 		}
 	}
+	
+	.logos {
+		margin-top: 2%;
+		margin-bottom: 4%;
+		width: 20% !important;
+		align-self: center;
+	}
+
+	.important-link-box {
+
+		img {
+			width: 500px !important;
+		}
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
-@media only screen and (max-width: 1079px) 
+@media only screen and (max-width: 991px) 
 {
+	.navbar-brand {
+		margin-top: -10px;
+	}
+
 	.header {
 		font-size: smaller;
-		background:
-			linear-gradient($color-one, transparent),
-			linear-gradient(to top left, $color-one, transparent),
-			linear-gradient(to top right, $color-two, transparent);
+		background-color: darken(adjust-hue($color-three, 10%), 25%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 		background-blend-mode: screen;
 		padding-left: 5%;
-		padding-right: 10%;
+		padding-right: 5%;
 		display: flex;
 		width: 100%;
 		flex-direction: column;
 		vertical-align: middle;
 		flex: 1, 1, auto;
+
+		h1 {
+			font-family: 'Underdog', sans-serif;
+			color: $color-five;
+		}
 
 		p {
 			justify-content: center;
@@ -147,7 +183,8 @@
 		max-width: 1100px;
 		margin-bottom: 100px;
 		text-align: center;
-		background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
+		background-color: darken(adjust-hue($color-three, 10%), 90%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 		
 		p {
 			color: $color-four;
@@ -158,6 +195,22 @@
 		video {
 			border-radius: 1%;
 		}
+	}
+
+	.logos {
+		margin-top: 5%;
+		margin-bottom: 10%;
+		width: 20%;
+		align-self: center;
+	}
+
+	.important-link-box {
+
+		img {
+			width: 500px !important;
+		}
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -205,46 +258,28 @@ html, body {
 	scroll-behavior: smooth;
 	overflow-y: scroll;
 	scrollbar-width: none;
-	background:
-	linear-gradient(to bottom, darken(adjust-hue($color-two, 10%), 10%), darken(adjust-hue($color-two, 60%), 10%)) !important;
+	background-color: darken(adjust-hue($color-three, 10%), 10%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 20%) 0%, darken(adjust-hue($color-three, 30%), 25%) 74%);
 }
 
 .footer{
 	width: 100%;
-	background: linear-gradient(to bottom, darken(adjust-hue($color-three, 10%), 10%), darken(adjust-hue($color-three, 60%), 10%)) !important;
+	background-color: darken(adjust-hue($color-three, 10%), 10%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 	color: $color-four;
-	padding: 2%;
+	padding: 1%;
 	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	p {
 		font-size: large !important;
+		height: fit-content !important;
 	}
 }
 
-.contact-info{
-	display: flex;
-	flex-direction: column;
-	margin: 2%;
-	justify-content: center;
-}
-
-
-.logos {
-	width: 70%;
-	display: flex;
-	margin-right: 5px !important;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.important-link-box {
-	img {
-		width: 100px;
-		max-width: 75px;
-	}
-	margin-left: auto;
-	margin-right: auto;
-}
 
 .tab-content {
 	height: 100%;

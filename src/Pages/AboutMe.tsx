@@ -81,7 +81,7 @@ function AboutMe({ portfolioType } : BasicProps){
 
       <div className="bio">
         <div className="bio-paragraph">
-          <h2>A little about me</h2>
+          <h1>A little about me</h1>
           <p>I grew up in Saudi Arabia and later moved to Canada for my higher education. Despite being Indian by nationality, Saudi Arabia has been my home throughout my childhood and teenage years.</p>
 
           <p>My passion for science and programming ignited at a young age. I found joy in writing algorithms and using my computer to create innovative solutions. However, as I entered my teenage years, I began to explore my artistic side and wanted to express my talents in more creative ways.</p>

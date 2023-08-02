@@ -1,11 +1,13 @@
 @import "../../Styles/variables.scss";
 @import "../../Styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
 
 .ProjectPages {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	display: flex;
 	flex-direction: column;
-	background: linear-gradient(to bottom, darken(adjust-hue($color-two, 10%), 10%), darken(adjust-hue($color-two, 60%), 10%)) !important;
+	background-color: darken(adjust-hue($color-three, 10%), 10%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 20%) 0%, darken(adjust-hue($color-three, 30%), 25%) 74%);
 	height: 100%;
 	overflow: hidden;
 }
@@ -19,10 +21,8 @@
 {
 	.project-header {
 		font-size: smaller;
-		background:
-			linear-gradient($color-one, transparent),
-			linear-gradient(to top left, $color-one, transparent),
-			linear-gradient(to top right, $color-two, transparent);
+		background-color: darken(adjust-hue($color-three, 10%), 25%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 		background-blend-mode: screen;
 		padding-left: 1%;
 		padding-right: 1%;
@@ -31,6 +31,15 @@
 		flex-direction: row;
 		vertical-align: middle;
 		flex: 1, 1, auto;
+
+		h1 {
+			font-family: 'Underdog', sans-serif;
+			color: $color-five;
+		}
+
+		img {
+			width: 250px;
+		}
 	
 		h6 {
 			color: $color-four;
@@ -147,18 +156,17 @@
 	}
 
 	.projectpages-download-button {
-		color: $color-two;
 		background-color: $color-four;
 		border-radius: 10px;
 		padding: 5px;
 		box-shadow: 2px 2px black;
 		max-width: fit-content;
+		margin-top: 15px;
 		
 		a {
 			text-decoration: none;
-			color: $color-two;
+			color: darken($color-four, 50%)
 		}
-	
 	}
 
 	.links {
@@ -180,10 +188,8 @@
 {
 	.project-header {
 		font-size: smaller;
-		background:
-			linear-gradient($color-one, transparent),
-			linear-gradient(to top left, $color-one, transparent),
-			linear-gradient(to top right, $color-two, transparent);
+		background-color: darken(adjust-hue($color-three, 10%), 25%); 
+		background-image: linear-gradient(315deg, darken(adjust-hue($color-three, 10%), 10%) 0%, darken(adjust-hue($color-three, 20%), 10%) 74%);
 		background-blend-mode: screen;
 		padding-left: 5%;
 		padding-right: 10%;
@@ -192,6 +198,15 @@
 		flex-direction: column;
 		vertical-align: middle;
 		flex: 1, 1, auto;
+
+		h1 {
+			font-family: 'Underdog', sans-serif;
+			color: $color-five;
+		}
+
+		img {
+			width: 200px;
+		}
 
 		p {
 			justify-content: center;
@@ -295,16 +310,16 @@
 	}
 
 	.projectpages-download-button {
-		color: $color-two;
 		background-color: $color-four;
 		border-radius: 10px;
 		padding: 5px;
 		box-shadow: 2px 2px black;
 		max-width: fit-content;
+		margin-top: 15px;
 		
 		a {
 			text-decoration: none;
-			color: $color-two;
+			color: darken($color-four, 50%)
 		}
 	}
 	
@@ -333,7 +348,8 @@
 		text-align: center;
 
 		iframe {
-	
+			width: 100%;
+			border-radius: 0px;
 		}
 	}
 	

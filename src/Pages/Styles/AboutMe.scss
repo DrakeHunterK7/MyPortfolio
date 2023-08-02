@@ -100,9 +100,9 @@
 	}
 
 	.bio-paragraph {
-		h2{
+		h1{
 			color: $color-four;
-			text-shadow: 2px 2px $color-three;
+			text-shadow: 2px 2px darken($color-four, 25%);
 			text-align: center;
 		}
 	
@@ -120,7 +120,7 @@
 
 	.AboutMe {
 		font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-		padding-bottom: 100px;
+		margin-bottom: 400px;
 		margin-top: 50px;
 	}
 
@@ -202,17 +202,20 @@
 	.bio-paragraph {
 		width: 50%;
 		margin: auto;
+
+
 		
-		h2{
+		h1 {
 			color: $color-four;
-			text-shadow: 2px 2px $color-three;
+			text-shadow: 2px 2px darken($color-four, 20%);
 			text-align: center;
 		}
 	
 		p {
 			text-align: justify;
+  			text-justify: inter-word;
 			color: $color-four;
-			text-align: center;
+
 		}
 	}
 

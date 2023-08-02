@@ -76,7 +76,7 @@ function ProjectPage() {
       <div className="project-header" id='top'>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
           <Container>
-            <Navbar.Brand><Nav.Link href={`#/${portfolioType}`}><img src={logoNameImage} alt="name-logo" width="250px"/></Nav.Link></Navbar.Brand>
+            <Navbar.Brand><Nav.Link href={`#/${portfolioType}`}><h1 className='logo-text'>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
           </Container>
         </Navbar>
       </div>

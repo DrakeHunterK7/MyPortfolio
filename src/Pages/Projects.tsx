@@ -59,7 +59,7 @@ function Projects({ portfolioType } : BasicProps) {
           {
             gameProjects.map(project => {
               return (
-                <Link to={`/${portfolioType}/${project.url_name}`}>
+                <Link to={`/${portfolioType}/${project.url_name}`} style={{ textDecoration: 'none' }}>
                   <div className="project-box">
                     <img alt={project.type} width={150} src={require("../Assets/Game Projects/Game Project Logos/"+project.image_name)}/>
                     <p>{project.name}</p>

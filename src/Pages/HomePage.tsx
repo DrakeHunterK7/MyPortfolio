@@ -4,7 +4,6 @@ import { useEffect, useState, useRef, RefObject, useMemo } from "react";
 import { useLocation, useMatch, useParams } from "react-router-dom";
 import ReactPlayer from 'react-player'
 
-import logoNameImage from '../Assets/logo-name.png';
 import resume from '../Assets/Documents/Anas Peerzada Resume.pdf';
 import showcase from '../Assets/Videos/GameProgrammerShowcase.mp4';
 import yt_img from '../Assets/youtube.png';
@@ -85,7 +84,7 @@ function HomePage() {
         <div className="header" id='top'>
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" expanded={expanded}>
           <Container>
-            <Navbar.Brand><Nav.Link href={`/#/MyPortfolio/${portfolioType}`}><img src={logoNameImage} alt="name-logo" width="250px"/></Nav.Link></Navbar.Brand>
+            <Navbar.Brand><Nav.Link href={`/#/MyPortfolio/${portfolioType}`}><h1 className='logo-text'>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
             <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -123,31 +122,29 @@ function HomePage() {
 
               <div ref={ref3} className={`section ${isVisible3 ? 'is-visible' : ''}`}>
                 <div className="footer">
-                  <div><p>Feel free to reach out to me at my email <a href="mailto:apeerzada987@gmail.com">apeerzada987@gmail.com.</a> Here are other ways you could reach me and/or check my work out:</p></div>
+                  <p>Feel free to reach out to me at my email <a href="mailto:apeerzada987@gmail.com">apeerzada987@gmail.com.</a> Here are other ways you could reach me and/or check my work out:</p>
 
-                  <div className="contact-info">
-                    <div className="logos">
-                      <div className="important-link-box">
-                      <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
-                        <img alt="it me"src={gh_img}/>
-                      </a>
-                      </div>
+                  <div className="logos">
+                    <div className="important-link-box">
+                    <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
+                      <img alt="it me"src={gh_img}/>
+                    </a>
+                    </div>
 
-                      <div className="important-link-box">
-                      <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
-                        <img alt="it me" src={li_img}/>
-                      </a>
-                      </div>
+                    <div className="important-link-box">
+                    <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
+                      <img alt="it me" src={li_img}/>
+                    </a>
+                    </div>
 
-                      <div className="important-link-box">
-                      <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
-                        <img alt="it me" src={yt_img}/>
-                      </a>
-                      </div>
+                    <div className="important-link-box">
+                    <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
+                      <img alt="it me" src={yt_img}/>
+                    </a>
                     </div>
                   </div>
 
-                  <div><p> Copyright © 2023 by Anas Peerzada | All images, logos and names are used with permission</p></div>
+                  <p> Copyright © 2023 by Anas Peerzada | All images, logos and names are used with permission</p>
                 </div>
               </div>
             </div>

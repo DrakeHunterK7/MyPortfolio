@@ -126,6 +126,9 @@ hr {
 	align-items: center;
 	text-decoration: none;
 
+	p {
+		text-decoration: none !important;
+	}
 }
 
 .project-modal {

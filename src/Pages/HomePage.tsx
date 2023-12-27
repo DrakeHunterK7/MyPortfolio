@@ -37,6 +37,7 @@ export function useOnScreen(ref: RefObject<HTMLElement>) {
 function HomePage() {
 
   const myRef = useRef<HTMLDivElement>(null)
+  const resume_link = "https://docs.google.com/document/d/1KgqqpIzFCG58CrhiDfhqpUcKLSS-W3Mp/edit?usp=sharing&ouid=112676637432997985208&rtpof=true&sd=true"
 
   const { portfolioType } = useParams()
   var [ pType ] = useState(portfolioType)
@@ -92,7 +93,7 @@ function HomePage() {
                 <Nav.Link href="" onClick={executeScroll1}><p>About Me</p></Nav.Link>
                 <Nav.Link href="" onClick={executeScroll2}><p>Projects</p></Nav.Link>
                 <Nav.Link href="" onClick={executeScroll3}><p>Contact</p></Nav.Link>
-                <Nav.Link href={resume} target="_blank"><p>Resume</p></Nav.Link>
+                <Nav.Link href={resume_link} target="_blank"><p>Resume</p></Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

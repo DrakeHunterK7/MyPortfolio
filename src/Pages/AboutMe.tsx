@@ -24,61 +24,6 @@ function AboutMe({ portfolioType } : BasicProps){
 
   return (
     <div className="AboutMe">
-      {/* <div className="personal-info-box"> */}
-
-        {/* <div className="contact-info">
-          <div className="logos">
-
-          <div className="important-link-box">
-            <a href="mailto:apeerzada987@gmail.com">
-                <img alt="it me" src={email_img}/>
-            </a>
-          </div>
-          
-          <div className="important-link-box">
-          <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
-            <img alt="it me"src={gh_img}/>
-          </a>
-          </div>
-
-          <div className="important-link-box">
-          <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
-            <img alt="it me" src={li_img}/>
-          </a>
-          </div>
-
-          <div className="important-link-box">
-          <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
-            <img alt="it me" src={yt_img}/>
-          </a>
-          </div>
-          </div>
-        </div> */}
-
-        {/* <hr/>
-
-        <div className="information-box">
-            <h3><b>Education</b></h3>
-            <div className="information-box-info">
-
-            <h4>Concordia University, Montreal, Canada</h4>
-              <h5>January 2017 - April 2023</h5>
-              <p>Bachelor of Engineering (BEng) in Software Engineering</p>
-              <p>CGPA: 3.3</p>
-              <p>Took Computer Games as an option with Software Engineering</p> */}
-{/* 
-            <h4>International Indian School, Jeddah, Saudi Arabia</h4>
-              <h5>January 2012 - April 2016</h5>
-              <ul>
-                <li>High School Diploma</li>
-                <li>Studied science and software</li>
-              </ul> */}
-
-            {/* </div>
-        </div> */}
-
-      {/* </div> */}
-
       <div className="bio">
         <div className="bio-paragraph">
           <h1>A little about me</h1>

@@ -2,8 +2,6 @@
 import './Styles/ProjectPage.scss';
 import { useState, useEffect } from "react";
 import gameProjects from '../data/GameProjects.json'
-import soenProjects from '../data/GameProjects.json'
-import Modal from 'react-bootstrap/Modal';
 import Badge from 'react-bootstrap/Badge';
 
 import { useParams } from "react-router-dom";
@@ -11,9 +9,6 @@ import { useParams } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Container } from 'react-bootstrap';
-
-import logoNameImage from '../Assets/logo-name.png';
-
 
 type Project = {
   date: string,
@@ -32,12 +27,8 @@ type Project = {
 
 function ProjectPage() {
 
-  const [show, setShow] = useState(false);
-
   const { portfolioType } = useParams();
   const { projectName } = useParams();
-
-  var [ pType ] = useState(portfolioType)
 
   const emptyProject : Project = {
     date: "",
@@ -57,11 +48,6 @@ function ProjectPage() {
   let [selectedProject, setSelectedProject] = useState(emptyProject);
 
   useEffect(() => {
-    loadProjectDetails();
-  }, []);
-
-  function loadProjectDetails()
-  {
     gameProjects.forEach(project => {
       if(project.url_name === projectName)
         {
@@ -69,7 +55,7 @@ function ProjectPage() {
           return;
         }
     });
-  }
+  }, [projectName]);
 
   return (
     <div className="ProjectPages">

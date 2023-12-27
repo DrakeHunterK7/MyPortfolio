@@ -1,7 +1,5 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import Intro from 'Pages/Intro';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom"

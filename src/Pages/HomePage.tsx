@@ -1,10 +1,8 @@
 
 import './Styles/HomePage.scss';
 import { useEffect, useState, useRef, RefObject, useMemo } from "react";
-import { useLocation, useMatch, useParams } from "react-router-dom";
-import ReactPlayer from 'react-player'
+import { useParams } from "react-router-dom";
 
-import resume from '../Assets/Documents/Anas Peerzada Resume.pdf';
 import showcase from '../Assets/Videos/GameProgrammerShowcase.mp4';
 import yt_img from '../Assets/youtube.png';
 import li_img from '../Assets/LinkedIn.png';
@@ -22,21 +20,20 @@ export function useOnScreen(ref: RefObject<HTMLElement>) {
 
   const observer = useMemo(() => new IntersectionObserver(
     ([entry]) => setIntersecting(entry.isIntersecting)
-  ), [ref])
+  ), [])
 
 
   useEffect(() => {
     if(ref.current !== null)
       observer.observe(ref.current)
     return () => observer.disconnect()
-  }, [])
+  }, [observer, ref])
 
   return isIntersecting
 }
 
 function HomePage() {
 
-  const myRef = useRef<HTMLDivElement>(null)
   const resume_link = "https://docs.google.com/document/d/1KgqqpIzFCG58CrhiDfhqpUcKLSS-W3Mp/edit?usp=sharing&ouid=112676637432997985208&rtpof=true&sd=true"
 
   const { portfolioType } = useParams()
@@ -52,7 +49,6 @@ function HomePage() {
   const isVisible3 = useOnScreen(ref3)
 
   const ref4 = useRef<HTMLDivElement>(null)
-  const isVisible4 = useOnScreen(ref4)
 
   const executeScroll1 = () => {
     if(ref.current !== null)

@@ -3,23 +3,6 @@ import './Styles/Projects.scss';
 import gameProjects from '../data/GameProjects.json'
 import { Link } from 'react-router-dom';
 
-
-type Project = {
-  date: string,
-  type: string
-  image_name: string,
-  name: string,
-  url_name: string,
-  video_link: string,
-  download_link: string,
-  github_link: string,
-  description: string,
-  responsibilities: string[],
-  challenges: string[],
-  learnings: string[],
-  engine: string
-}
-
 type BasicProps = {
   portfolioType: string;
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.d52b6467.css",
-    "main.js": "/MyPortfolio/static/js/main.e637f631.js",
+    "main.js": "/MyPortfolio/static/js/main.15ca9dd3.js",
     "static/js/453.ed3810f9.chunk.js": "/MyPortfolio/static/js/453.ed3810f9.chunk.js",
     "static/media/GameProgrammerShowcase.mp4": "/MyPortfolio/static/media/GameProgrammerShowcase.ffab78170143ab41bdfe.mp4",
     "static/media/space_conquest.png": "/MyPortfolio/static/media/space_conquest.f7882c7a87bc8beb3494.png",
@@ -17,11 +17,11 @@
     "static/media/LinkedIn.png": "/MyPortfolio/static/media/LinkedIn.a95afc06831647f5fca2.png",
     "index.html": "/MyPortfolio/index.html",
     "main.d52b6467.css.map": "/MyPortfolio/static/css/main.d52b6467.css.map",
-    "main.e637f631.js.map": "/MyPortfolio/static/js/main.e637f631.js.map",
+    "main.15ca9dd3.js.map": "/MyPortfolio/static/js/main.15ca9dd3.js.map",
     "453.ed3810f9.chunk.js.map": "/MyPortfolio/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d52b6467.css",
-    "static/js/main.e637f631.js"
+    "static/js/main.15ca9dd3.js"
   ]
 }

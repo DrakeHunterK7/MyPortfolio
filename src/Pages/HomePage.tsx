@@ -77,7 +77,7 @@ function HomePage() {
   return (
     <div className="HomePage">
         <div className="header" id='top'>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" expanded={expanded}>
+        <Navbar collapseOnSelect expand="lg" className="" expanded={expanded}>
           <Container>
             <Navbar.Brand><Nav.Link href={`#/${portfolioType}`}><h1>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
             <Navbar.Toggle onClick={() => setExpanded(expanded ? false : true)} aria-controls="responsive-navbar-nav" />

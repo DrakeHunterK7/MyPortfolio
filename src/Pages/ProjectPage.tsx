@@ -60,7 +60,7 @@ function ProjectPage() {
   return (
     <div className="ProjectPages">
       <div className="project-header" id='top'>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="">
           <Container>
             <Navbar.Brand><Nav.Link href={`#/${portfolioType}`}><h1>Anas Peerzada</h1></Nav.Link></Navbar.Brand>
           </Container>

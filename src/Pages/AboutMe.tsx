@@ -1,12 +1,7 @@
 
 import './Styles/AboutMe.scss';
 
-type BasicProps = {
-  portfolioType: string;
-}
-
-function AboutMe({ portfolioType } : BasicProps){
-
+function AboutMe(){
   return (
     <div className="AboutMe">
       <div className="bio">

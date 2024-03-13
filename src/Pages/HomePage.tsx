@@ -4,9 +4,7 @@ import { useEffect, useState, useRef, RefObject, useMemo } from "react";
 import { useParams } from "react-router-dom";
 
 import showcase from '../Assets/Videos/GameProgrammerShowcase.mp4';
-import yt_img from '../Assets/youtube.png';
-import li_img from '../Assets/LinkedIn.png';
-import gh_img from '../Assets/github.png';
+import logos from 'Assets/Social Logos';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -109,34 +107,34 @@ function HomePage() {
               </div>
             </div>
 
-              <div ref={ref} className={`section ${isVisible ? 'is-visible' : ''}`}>
-                <AboutMe portfolioType={pType}/>
-              </div>
+            <div ref={ref} className={`section ${isVisible ? 'is-visible' : ''}`}>
+              <AboutMe />
+            </div>
 
-              <div ref={ref2} className={`section ${isVisible2 ? 'is-visible' : ''}`}>
-                <Projects portfolioType={pType}/>
-              </div>
+            <div ref={ref2} className={`section ${isVisible2 ? 'is-visible' : ''}`}>
+              <Projects portfolioType={pType}/>
+            </div>
 
               <div ref={ref3} className={`section ${isVisible3 ? 'is-visible' : ''}`}>
                 <div className="footer">
-                  <p>Feel free to reach out to me at my email <a href="mailto:apeerzada987@gmail.com">apeerzada987@gmail.com.</a> Here are other ways you could reach me and/or check my work out:</p>
+                  <p>Feel free to reach out to me at my email <a href={logos[3].link}>apeerzada987@gmail.com.</a> Here are other ways you could reach out to me and/or check my work out:</p>
 
                   <div className="logos">
                     <div className="important-link-box">
-                    <a href="https://github.com/DrakeHunterK7" target="_blank" rel="noreferrer">
-                      <img alt="it me"src={gh_img}/>
+                    <a href={logos[2].link} target="_blank" rel="noreferrer">
+                      <img alt="it me"src={logos[2].source}/>
                     </a>
                     </div>
 
                     <div className="important-link-box">
-                    <a href="https://www.linkedin.com/in/anas-peerzada-61ab6b13b/" target="_blank" rel="noreferrer">
-                      <img alt="it me" src={li_img}/>
+                    <a href={logos[1].link} target="_blank" rel="noreferrer">
+                      <img alt="it me" src={logos[1].source}/>
                     </a>
                     </div>
 
                     <div className="important-link-box">
-                    <a href="https://www.youtube.com/channel/UCYNmG-kMHASaOiMdRYo_izA" target="_blank" rel="noreferrer">
-                      <img alt="it me" src={yt_img}/>
+                    <a href={logos[0].link} target="_blank" rel="noreferrer">
+                      <img alt="it me" src={logos[0].source}/>
                     </a>
                     </div>
                   </div>

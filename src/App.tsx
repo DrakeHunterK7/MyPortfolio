@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from './Assets/latest-front-photo.jpg';
+import personalmedia from 'Assets/Personal Images';
 import './App.scss';
 
 function App() {
   return (
     <div className="App fade-in">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={personalmedia[0].source} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div> 
   );
 }
 
